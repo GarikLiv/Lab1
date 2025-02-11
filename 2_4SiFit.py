@@ -140,3 +140,40 @@ for i in range(size):
     plt.legend()
     plt.savefig(name,bbox_inches='tight')
     plt.close()
+
+'''
+[Thermal Volt vs Temp]
+'''
+def thermVolt(T,k):
+    return k*T/e
+
+Temps = np.array([Vdata[i][1] + 273 for i in range(size)])
+VoltsT = np.array([fitData[i][0][0] for i in range(size)])
+Temps = Temps[:,np.newaxis]
+a, _, _, _ = np.linalg.lstsq(Temps, VoltsT)
+print(a)
+print(k/e)
+ssR = 0
+SoSqrs = 0
+for i in range(size):
+    ssR += (VoltsT[i] - Temps[i]*a)**2
+    SoSqrs += (VoltsT[i]-np.mean(VoltsT))**2
+print(f"ssR = {ssR}")
+print(f"SoSqrs = {SoSqrs}")
+r = 1 - (ssR/SoSqrs)
+print(f"R^2 = {r}")
+s = 0
+for i in range(size):
+    s+= (VoltsT[i] - Temps[i]*a)**2
+np.sqrt(s/7)
+print(f"Std dev of resiudals = {s}")
+intervalT = np.linspace(290,320,1000)
+plt.figure()
+plt.xlim(290,320)
+plt.xlabel('T (Kelvin)',fontsize=14)
+plt.ylabel('V_T (Volts)',fontsize=14)
+plt.scatter(Temps,VoltsT,color="black",label="data",s=5)
+plt.plot(intervalT,intervalT*a,color="black",linewidth=1.2,label="Best-Fit Curve")
+plt.plot(intervalT,intervalT*k/e,color="blue",linewidth=1.2,label="Expected Thermal Voltage Curve")
+plt.legend()
+plt.savefig("2_4SiBoltz.png",bbox_inches="tight")
