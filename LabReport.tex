@@ -5,10 +5,10 @@
 %============ Controls ===============================
 %=====================================================
 
-\documentclass[12pt,letterpaper,onecolumn]{article}
+%\documentclass[12pt,letterpaper,onecolumn]{article}
 %\documentclass[11pt,letterpaper,onecolumn]{article}
 %\documentclass[10pt,letterpaper,onecolumn]{article}
-%\documentclass[12pt,letterpaper,twocolumn]{article}
+\documentclass[12pt,letterpaper,twocolumn]{article}
 %\documentclass[11pt,letterpaper,twocolumn]{article}
 %\documentclass[10pt,letterpaper,twocolumn]{article}
 
@@ -122,72 +122,57 @@ instruction manual.
 %============ Importing pictures  ====================
 %=====================================================
 
-\begin{figure}[h]
-  %
-  % placement specifier = { h,t,b,p,!,H }
-  % see the following url for placement specifier definitions:
-  % http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
-  %
- \begin{center}
- \includegraphics*[width=3.5in]{string_theory.pdf}
-  %
- \caption{ My Caption, in all its glory.\label{fig:apparatus} }
- % See http://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing
- %  for information on labels.
- \end{center}
-\end{figure}
-
 \subsection{Data Collection}
 
-Data taking procedures should be described and various modes of
-data collection explained. Calibration procedures and
-relevant plots and numerical tables should be included.
-State clearly what measurements were taken for the final
-data analysis. Describe `doing the experiment' so it would
-be helpful to other students in the future. This may need
-to include physics arguments {\em what } and {\em how } data should
-be collected.
+
+
+%Data taking procedures should be described and various modes of
+%data collection explained. Calibration procedures and
+%relevant plots and numerical tables should be included.
+%State clearly what measurements were taken for the final
+%data analysis. Describe `doing the experiment' so it would
+%be helpful to other students in the future. This may need
+%to include physics arguments {\em what } and {\em how } data should
+%be collected.
 
 
 \subsection{Data Analysis}
 
-This is the most important section of the report.
-Describe data analysis. Details! Perhaps include a figure and refer
-the reader to it! See Figure~\ref{fig:apparatus}. Maybe you will need
-to include a table. See Table~\ref{tab:events}.
+We setup our circuit to have a variable supply of voltage to the base ($V_{be}$) while measuring the  collector current ($I_c$) readings from the pico ampmeter . We took the dataset of $V_{be} \text{ vs } I_c$ and fitted it to Ebbers moll equation
 
-Describe calculations of the final results.
-Thoroughly address error analysis and discussion of measurement
-uncertainties. Remember: NO EXPERIMENTAL RESULT CAN BE QUOTED
-WITHOUT AN ERROR BAR! Do not forget about random or systematic
-uncertainties. Be sure to propagate errors correctly!
-Include a demonstrative graph when possible.
+\begin{equation}
+	I_c = I_s(e^{\frac{V_{be}}{V_T}}-1).
+\end{equation}
+$V_T = \frac{kT}{e}$ where e is the charge of an electron, T is the temperature in Kelvin, and k is boltzman constnt. By fitting our dataset to this equation we determined an experimental value for $V_T$. We then repeated our measurements with variable temperature and created a linear graph of $T \text{ vs } V_T$ where we expect the slope to equal $\frac{k}{e}$. 
+
+\begin{figure}[h]
+	\includegraphics[width = .5\textwidth]{2_6SiBoltz.png}
+		\caption{Temperature vs Thermal Voltage graph. The data points collected are represented by the black dots, our best-fit slope is the solid black curve, and the expected slope of $\frac{k}{e}$ is the solid blue curve.}
+	
+\end{figure}
+
+%This is the most important section of the report.
+%Describe data analysis. Details! Perhaps include a figure and refer
+%the reader to it! See Figure~\ref{fig:apparatus}. Maybe you will need
+%to include a table. See Table~\ref{tab:events}.
+%
+%Describe calculations of the final results.
+%Thoroughly address error analysis and discussion of measurement
+%uncertainties. Remember: NO EXPERIMENTAL RESULT CAN BE QUOTED
+%WITHOUT AN ERROR BAR! Do not forget about random or systematic
+%uncertainties. Be sure to propagate errors correctly!
+%Include a demonstrative graph when possible.
 %See Figure~\ref{fig:results}.
-
-
-Make final assessment and interpretation after that.
-Discuss apparatus problems if any. Suggestions for
-lab setup or approach improvements are welcome!
-
+%
+%
+%Make final assessment and interpretation after that.
+%Discuss apparatus problems if any. Suggestions for
+%lab setup or approach improvements are welcome!
+%
 %=====================================================
 %============ Importing pictures  ====================
 %=====================================================
 
-\begin{figure}[h]
-  %
-  % placement specifier = { h,t,b,p,!,H }
-  % see the following url for placement specifier definitions:
-  % http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
-  %
- \begin{center}
- \includegraphics*[width=3.5in]{centrifugal_force.pdf}
-  %
-  %
- %\caption{ The experiment provided interesting results.\label{fig:results} }
- % See http://en.wikibooks.org/wiki/LaTeX/Labels_and_Cross-referencing
- %  for information on labels.
- \end{center}
-\end{figure}
 
 
 %===========================================================================
@@ -199,44 +184,44 @@ lab setup or approach improvements are welcome!
 % for details.
 %
 
-\begin {table}[h]
-{
-{%\footnotesize
-\begin {center}
-\begin {tabular} {c | c c  c | c | c c }
-\hline\hline
-Run 			&   ~~POT~~ 		&
-\multicolumn{2}{ | c } {Predicted}  &   \multicolumn{2}  {| c} {Selected} \\
-Period		& $(10^{20})$	&
-\multicolumn{2}{ | c } {(No oscillations)}  &   \multicolumn{2}  {| c} {(Far Detector)} \\
-			    &
-			& \multicolumn{1} {| c } {~~~Fully} & \multicolumn{1} { c } {~~~Partially}
-			& \multicolumn{1} {| c } {~~~Fully} & \multicolumn{1} { c } {~~~Partially} \\
-			
-\hline
-I			& 1.269		
-			& \multicolumn{1} {| r } {426 } & \multicolumn{1} { r } {375 }
-		     	& \multicolumn{1} {| r } {318 } & \multicolumn{1} { r } {357 } \\
-
-II		     	& 1.943
-			& \multicolumn{1} {| r } {639 } & \multicolumn{1} { r } {565 }
-		    	& \multicolumn{1} {| r } {511 } & \multicolumn{1} { r } {555 } \\
-
-\hline
-Total			& 7.246
-			& \multicolumn{1} {| r } {2,451 } & \multicolumn{1} { r } {2,206 }
-		     	& \multicolumn{1} {| r } {1,986 } & \multicolumn{1} { r } {2,017 } \\
-
-\hline% \hline
-\end {tabular}
-\end {center}
-}
-}
-\caption {\label{tab:events}
-Predicted and observed numbers of events classified in the Far Detector as fully and
-partially reconstructed charged current interactions shown for all running periods.
- }
-\end {table}
+%\begin {table}[h]
+%{
+%{%\footnotesize
+%\begin {center}
+%\begin {tabular} {c | c c  c | c | c c }
+%\hline\hline
+%Run 			&   ~~POT~~ 		&
+%\multicolumn{2}{ | c } {Predicted}  &   \multicolumn{2}  {| c} {Selected} \\
+%Period		& $(10^{20})$	&
+%\multicolumn{2}{ | c } {(No oscillations)}  &   \multicolumn{2}  {| c} {(Far Detector)} \\
+%			    &
+%			& \multicolumn{1} {| c } {~~~Fully} & \multicolumn{1} { c } {~~~Partially}
+%			& \multicolumn{1} {| c } {~~~Fully} & \multicolumn{1} { c } {~~~Partially} \\
+%			
+%\hline
+%I			& 1.269		
+%			& \multicolumn{1} {| r } {426 } & \multicolumn{1} { r } {375 }
+%		     	& \multicolumn{1} {| r } {318 } & \multicolumn{1} { r } {357 } \\
+%
+%II		     	& 1.943
+%			& \multicolumn{1} {| r } {639 } & \multicolumn{1} { r } {565 }
+%		    	& \multicolumn{1} {| r } {511 } & \multicolumn{1} { r } {555 } \\
+%
+%\hline
+%Total			& 7.246
+%			& \multicolumn{1} {| r } {2,451 } & \multicolumn{1} { r } {2,206 }
+%		     	& \multicolumn{1} {| r } {1,986 } & \multicolumn{1} { r } {2,017 } \\
+%
+%\hline% \hline
+%\end {tabular}
+%\end {center}
+%}
+%}
+%\caption {\label{tab:events}
+%Predicted and observed numbers of events classified in the Far Detector as fully and
+%partially reconstructed charged current interactions shown for all running periods.
+% }
+%\end {table}
 
 
 %=====================================================

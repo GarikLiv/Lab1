@@ -113,10 +113,32 @@ print(f"Eg = {Bg[0]} with err: {np.sqrt(np.diag(Bg[1]))}")
 '''
 [Graphing Section]
 '''
+
+'''
+[New Sat Current Model]
+'''
+lnIs = np.array([float(np.log(fitData[i][0][1])) for i in range(9)])
+Trecip = np.array([float(1/(Vdata[i][1]+273)) for i in range (9)])
+TrecipVec = Trecip[:,np.newaxis]
+print(Trecip)
+print(lnIs)
+linCurrSlope, _, _, _ = np.linalg.lstsq(TrecipVec,lnIs)
+paramsSat = linregress(Trecip,lnIs)
+print(paramsSat)
+print(-k*paramsSat[0]/e)
+print(-k*linCurrSlope/e)
+intervalT = np.linspace(290,320,1000)
+plt.figure()
+plt.xlabel('1/T (Kelvin)^-1',fontsize = 14)
+plt.ylabel('ln(I_S) (ln(Amps))',fontsize=14)
+plt.scatter(Trecip,lnIs,color="black",label="data",s=5)
+plt.plot((1/intervalT),(1/intervalT)*paramsSat[0] + paramsSat[1],color="black",linewidth=1.2,label ="Best-Fit Curve")
+plt.legend()
+plt.savefig("linSiSatCurrent.png",bbox_inches='tight')
+plt.close()
 '''
 [Temp vs Sat Current]
 '''
-intervalT = np.linspace(290,320,1000)
 plt.figure()
 plt.xlim(290,320)
 plt.xlabel('T (Kelvin)',fontsize=14)

@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
+from scipy.stats import linregress
 
 def transCurrent(vBe,vT,iSat):
     return iSat*(np.exp(vBe/vT)-1)
@@ -152,6 +153,24 @@ print(f"Eg = {Bg[0]} with err: {np.sqrt(np.diag(Bg[1]))}")
 '''
 [Graphing Section]
 '''
+'''
+[New Sat Current Model]
+'''
+lnIs = [np.log(Is[i][1]) for i in range(size)]
+Trecip = [(1/Is[i][0]) for i in range (size)]
+paramsSat = linregress(Trecip,lnIs)
+print(paramsSat)
+print(-k*paramsSat[0]/e)
+intervalT = np.linspace(290,320,1000)
+plt.figure()
+plt.xlabel('1/T (Kelvin)^-1',fontsize = 14)
+plt.ylabel('ln(I_S) (ln(Amps))',fontsize=14)
+plt.scatter(Trecip,lnIs,color="black",label="data",s=5)
+plt.plot((1/intervalT),(1/intervalT)*paramsSat[0] + paramsSat[1],color="black",linewidth=1.2,label ="Best-Fit Curve")
+plt.legend()
+plt.savefig("linGeSatCurrent.png",bbox_inches='tight')
+plt.close()
+
 intervalT = np.linspace(290,320,1000)
 plt.figure()
 plt.xlim(290,320)
