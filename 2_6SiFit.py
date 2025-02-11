@@ -1,12 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
+from scipy.stats import linregress
+
+k = 1.380649E-23
+e = 1.60217663E-19
 
 def transCurrent(vBe,vT,iSat):
     return iSat*(np.exp(vBe/vT)-1)
 
-k = 1.380649E-23
-e = 1.60217663E-19
+
 
 V23_4 = [0, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.035, 0.04, 0.045, 0.05, 0.055, 0.06, 0.065, 0.07, 0.075, 0.08, 0.085, 0.09, 0.095, 0.1, 0.105, 0.11, 0.115, 0.12, 0.125, 0.13, 0.135, 0.14, 0.145, 0.15, 0.155, 0.16, 0.165, 0.17, 0.175, 0.18, 0.185, 0.19, 0.195, 0.2, 0.205, 0.21, 0.215, 0.22, 0.225, 0.23, 0.235, 0.24, 0.245, 0.25, 0.255, 0.26, 0.265, 0.27, 0.275, 0.28, 0.285, 0.29, 0.295, 0.3, 0.305, 0.31, 0.315, 0.32, 0.325, 0.33, 0.335, 0.34, 0.345, 0.35, 0.355, 0.36, 0.365, 0.37, 0.375, 0.38, 0.385, 0.39, 0.395, 0.4, 0.405, 0.41, 0.415, 0.42, 0.425, 0.43, 0.435, 0.44, 0.445, 0.45, 0.455, 0.46, 0.465, 0.47]
 V24_4 = [0, 0.005, 0.01, 0.015, 0.02, 0.025, 0.03, 0.035, 0.04, 0.045, 0.05, 0.055, 0.06, 0.065, 0.07, 0.075, 0.08, 0.085, 0.09, 0.095, 0.1, 0.105, 0.11, 0.115, 0.12, 0.125, 0.13, 0.135, 0.14, 0.145, 0.15, 0.155, 0.16, 0.165, 0.17, 0.175, 0.18, 0.185, 0.19, 0.195, 0.2, 0.205, 0.21, 0.215, 0.22, 0.225, 0.23, 0.235, 0.24, 0.245, 0.25, 0.255, 0.26, 0.265, 0.27, 0.275, 0.28, 0.285, 0.29, 0.295, 0.3, 0.305, 0.31, 0.315, 0.32, 0.325, 0.33, 0.335, 0.34, 0.345, 0.35, 0.355, 0.36, 0.365, 0.37, 0.375, 0.38, 0.385, 0.39, 0.395, 0.4, 0.405, 0.41, 0.415, 0.42, 0.425, 0.43, 0.435, 0.44, 0.445, 0.45, 0.455, 0.46, 0.465, 0.47, 0.475, 0.48, 0.485, 0.49, 0.495]
@@ -60,23 +63,23 @@ def getVlist(n):
 def getAlist(n):
     match (n):
         case 0:
-            return a23_4,23.4
-        case 1:              
-            return a24_4,24.4
-        case 2:              
-            return a25_8,25.8
-        case 3:              
-            return a27_1,27.1
-        case 4:              
-            return a29_0,29.0
-        case 5:              
-            return a33_1,33.1
-        case 6:              
-            return a34_5,34.5
-        case 7:              
-            return a40_3,40.3
-        case 8:              
-            return a43_1,43.1
+            return a23_4,"23_4"
+        case 1:
+            return a24_4,"24_4"
+        case 2:
+            return a25_8,"25_8"
+        case 3:
+            return a27_1,"27_1"
+        case 4:
+            return a29_0,"29_0"
+        case 5:
+            return a33_1,"33_1"
+        case 6:
+            return a34_5,"34_5"
+        case 7:
+            return a40_3,"40_3"
+        case 8:
+            return a43_1,"43_1"
 
 Vdata = [getVlist(i) for i in range(9)]
 Adata = [getAlist(i) for i in range(9)]
@@ -98,3 +101,75 @@ boltzErr = np.sqrt(boltzVar)
 error = ((boltzC - k + boltzErr)*100/k,(boltzC - k - boltzErr)*100/k)
 print(f"k = {boltzC} with err {boltzErr}")
 print(f"We found a {error[0]}% error for the upper bound, and a {error[1]}% for the lower bound")
+
+Is = [(Vdata[i][1]+273,fitData[i][0][1]) for i in range(9)]
+
+def satCurrent(T,Eg):
+    return Is[0][1]*(T/Is[0][0])**3*np.exp((e*Eg/k)*((1/Is[0][0])-(1/T)))
+
+Bg = curve_fit(satCurrent,[Is[i][0] for i in range(9)],[Is[i][1] for i in range(9)])
+print(f"Eg = {Bg[0]} with err: {np.sqrt(np.diag(Bg[1]))}")
+
+'''
+[Graphing Section]
+'''
+'''
+[Temp vs Sat Current]
+'''
+intervalT = np.linspace(290,320,1000)
+plt.figure()
+plt.xlim(290,320)
+plt.xlabel('T (Kelvin)',fontsize=14)
+plt.ylabel('I_S (Pico Amps)',fontsize=14)
+plt.scatter([Is[i][0] for i in range(9)],[Is[i][1]*1E012 for i in range(9)],color="black",label ="data",s=10)
+plt.plot(intervalT,satCurrent(intervalT,1.1)*1E012,color="black",linestyle="dashed",linewidth=1.2,label="Expected curve (Eg = 1.11eV)")
+plt.plot(intervalT,satCurrent(intervalT,Bg[0])*1E012,color="black",linewidth=1.2,label="Best-Fit curve (Eg = 1.48eV)")
+plt.legend()
+plt.savefig("2_6SiSat_Current.png")
+plt.close()
+
+'''
+[Volt Vs Current]
+'''
+intervalV = np.linspace(0,0.5,1000)
+for i in range(9):
+    plt.figure()
+    plt.xlim(0,0.5)
+    plt.xlabel('V_BE (Volts)',fontsize=14)
+    plt.ylabel('I_C (Nano Amps)',fontsize=14)
+    name = "2_6SiTemp" + str(getAlist(i)[1])+ ".png"
+    plt.scatter(getVlist(i)[0],[x*1E+09 for x in getAlist(i)[0]],color = "black",label ="data",s=5)
+    plt.plot(intervalV,[x*1E+09 for x in transCurrent(intervalV,fitData[i][0][0],fitData[i][0][1])],color ="black",linewidth=1.2,label="Best-Fit Curve")
+    plt.legend()
+    plt.savefig(name,bbox_inches='tight')
+    plt.close()
+
+'''
+[Thermal Volt vs Temp]
+'''
+def thermVolt(T,k):
+    return k*T/e
+
+Temps = np.array([Vdata[i][1] + 273 for i in range(9)])
+VoltsT = np.array([fitData[i][0][0] for i in range(9)])
+truncTemps = Temps[1:9]
+truncVoltsT = VoltsT[1:9]
+truncTemps = truncTemps[:,np.newaxis]
+a, _, _, _ = np.linalg.lstsq(truncTemps, truncVoltsT)
+print(a)
+print(k/e)
+r = 0
+for i in range(8):
+    r-= (truncVoltsT[i] - truncTemps[i]*a)**2/(truncVoltsT[i]-np.mean(truncVoltsT))**2
+r += 1
+print(r)
+intervalT = np.linspace(290,320,1000)
+plt.figure()
+plt.xlim(290,320)
+plt.xlabel('T (Kelvin)',fontsize=14)
+plt.ylabel('V_T (Volts)',fontsize=14)
+plt.scatter(Temps,VoltsT,color="black",label="data",s=5)
+plt.plot(intervalT,intervalT*a,color="black",linewidth=1.2,label="Best-Fit Curve")
+plt.legend()
+plt.savefig("2_6SiBoltz.png",bbox_inches="tight")
+plt.close()

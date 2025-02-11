@@ -139,3 +139,38 @@ boltzErr = np.sqrt(boltzVar)
 error = ((boltzC - k + boltzErr)*100/k,(boltzC - k - boltzErr)*100/k)
 print(f"k = {boltzC} with err {boltzErr}")
 print(f"We found a {error[0]}% error for the upper bound, and a {error[1]}% for the lower bound")
+
+
+Is = [(Vdata[i][1]+273,fitData[i][0][1]) for i in range(size)]
+
+def satCurrent(T,Eg):
+    return Is[0][1]*(T/Is[0][0])**3*np.exp((e*Eg/k)*((1/Is[0][0])-(1/T)))
+
+Bg = curve_fit(satCurrent,[Is[i][0] for i in range(size)],[Is[i][1] for i in range(size)])
+print(f"Eg = {Bg[0]} with err: {np.sqrt(np.diag(Bg[1]))}")
+
+'''
+[Graphing Section]
+'''
+intervalT = np.linspace(290,320,1000)
+plt.figure()
+plt.xlim(290,320)
+plt.xlabel('T (Kelvin)',fontsize=14)
+plt.ylabel('I_S (Pico Amps)',fontsize=14)
+plt.scatter([Is[i][0] for i in range(size)],[Is[i][1] for i in range(size)],color="black",s=10)
+plt.plot(intervalT,satCurrent(intervalT,1.475),color="black",linewidth=1.2,label="Best-fit Curve")
+plt.savefig("2_6GeSat_Current.png")
+plt.close()
+
+intervalV = np.linspace(0,0.5,1000)
+for i in range(size):
+    plt.figure()
+    plt.xlim(0,0.5)
+    plt.xlabel('V_BE (Volts)',fontsize=14)
+    plt.ylabel('I_C (Nano Amps)',fontsize=14)
+    name = "GeTemp" + str(getAlist(i)[1])+ ".png"
+    plt.scatter(getVlist(i)[0],[x*1E+09 for x in getAlist(i)[0]],color = "black",label ="data",s=5)
+    plt.plot(intervalV,[x*1E+09 for x in transCurrent(intervalV,fitData[i][0][0],fitData[i][0][1])],color ="black",linewidth=1.2,label="Best-Fit Curve")
+    plt.legend()
+    plt.savefig(name,bbox_inches='tight')
+    plt.close()
