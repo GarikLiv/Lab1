@@ -71,22 +71,21 @@
 
 \subsection{Physics Motivation}
 
-Broad physics motivation should be discussed briefly but
-meaningfully. Basic phenomena should be
-explained (or referred to) and
-prediction for experimental results clearly
-stated. Here and throughout the report appropriate
-references should be included~\cite{book, article}.
+Semiconductors are essential components of modern electronics due to their unique electronic properties: a valence band filled with electrons and a conduction band that is nearly empty, separated by an energy band gap \( V_g \). The ability of electrons to transition from the valence band to the conduction band under specific conditions, such as thermal excitation or applied voltage, forms the basis for the functionality of semiconductor devices like transistors \cite{Thornton}.
 
-\subsection{Historical context}
+In this experiment, we explore the behavior of an NPN bipolar junction transistor (BJT) and focus on the relationship between the collector current \( I_C \) and the base-emitter voltage \( V_{BE} \). The transistor’s function depends on the exponential dependence of \( I_C \) on \( V_{BE} \), described by the Ebers-Moll equation:
 
-You may want to relate what you are doing to first or previous
-work on this topic. Since you are doing an experimental work,
-the context should be on the experimental technique. For example,
-you may say that this was first done in a such and such way
-but later it was discovered
-that one can also do it another way. Your technique may be
-related to the first or none of the above.
+\[
+I_C = I_S \left(e^{eV_{BE}/kT} - 1\right)
+\]
+
+where \( I_S \) is the saturation current, \( e \) is the elementary charge, \( k \) is Boltzmann’s constant, and \( T \) is the absolute temperature \cite{Neudeck}. This exponential behavior arises from the Boltzmann factor, which governs the probability of electron excitation across the band gap:
+
+\[
+P(E) \propto e^{-E/kT}
+\]
+
+By measuring \( I_C \) as a function of \( V_{BE} \) at different temperatures, we can extract both Boltzmann’s constant and the band gap of the semiconductor material. This experiment not only reinforces theoretical principles of semiconductor physics but also demonstrates the practical application of transistors in amplification and switching, which are fundamental to all modern electronic devices \cite{Thornton}.
 
 
 %=====================================================
@@ -267,10 +266,10 @@ others (TA, machine shop, software used, ...).
 
 \begin{thebibliography}{9}
 
-\bibitem{book} R. Feynman, {\it QED}, Ch.7.
+\bibitem{Neudeck} G. W. Neudeck, \textit{The Bipolar Junction Transistor}, Addison-Wesley, 1989.
+\bibitem{Thornton} S. T. Thornton and A. Rex, \textit{Modern Physics for Scientists and Engineers}, 4th ed., Cengage Learning, 2013.
 
-\bibitem{article}	
-R.Dalitz, Proc. Roy. Soc. (London) {\bf A64}, 667 (1951)
+\end{thebibliography}
 
 \end{thebibliography}
 
