@@ -71,8 +71,21 @@
 
 \subsection{Physics Motivation}
 
-The npn Bipolar Transistor (BJT) is a device made of two n doped semiconductor regions called the collector and emitter sandwiched between a p doped base region. 
+Semiconductors are essential components of modern electronics due to their unique electronic properties: a valence band filled with electrons and a nearly empty conduction band, separated by an energy band gap \( V_g \). The ability of electrons to transition from the valence band to the conduction band under specific conditions, such as thermal excitation or applied voltage, forms the basis for the functionality of semiconductor devices like transistors \cite{Thornton}.
 
+In this experiment, we investigate the behavior of an NPN bipolar junction transistor (BJT) by examining the relationship between the collector current \( I_C \) and the base-emitter voltage \( V_{BE} \). The NPN bipolar junction transistor is a device made up of a p-type semiconductor, the base, sandwiched between two n-type semiconductors, the collector and emitter. The transistor’s function depends on the exponential dependence of \( I_C \) on \( V_{BE} \), described by the Ebers-Moll equation:
+
+\[
+I_C = I_S \left(e^{eV_{BE}/kT} - 1\right)
+\]
+
+where \( I_S \) is the saturation current, \( e \) is the elementary charge, \( k \) is Boltzmann’s constant, and \( T \) is the absolute temperature \cite{Neudeck}. This exponential behavior arises from the Boltzmann factor, which governs the probability of electron excitation across the band gap:
+
+\[
+P(E) \propto e^{-E/kT}
+\]
+
+By measuring \( I_C \) as a function of \( V_{BE} \) at different temperatures, we can extract both Boltzmann’s constant \( k \) and the band gap \( V_g \) of the semiconductor material. These measurements not only reinforce the theoretical principles of semiconductor physics but also demonstrate the practical application of transistors in amplification and switching, which are fundamental to all modern electronic devices \cite{Thornton}.	
 %Broad physics motivation should be discussed briefly but
 %meaningfully. Basic phenomena should be
 %explained (or referred to) and
