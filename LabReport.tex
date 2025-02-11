@@ -117,9 +117,45 @@ These advancements laid the foundation for modern experimental techniques. Early
 
 \section{Theoretical background}
 
-Provide some more theoretical details for your measurements.
-Give formulas and references which provide a specific theoretical
-context for your measurements.
+Semiconductors are materials characterized by an electronic structure consisting of a valence band filled with electrons and a conduction band that is nearly empty at low temperatures. These bands are separated by an energy gap, known as the band gap \( V_g \). At absolute zero, semiconductors behave as insulators, with no electrons in the conduction band. However, at finite temperatures, some electrons gain enough thermal energy to cross the band gap, enabling electrical conduction. The likelihood of electron excitation across the band gap is determined by the Boltzmann factor:
+
+\[
+P(E) \propto e^{-E/kT}
+\]
+
+where \( E \) is the energy required for excitation, \( k \) is Boltzmann’s constant, and \( T \) is the absolute temperature\cite{Thornton}.
+
+An NPN bipolar junction transistor (BJT) consists of two n-doped regions (the emitter and collector) separated by a thin p-doped base. When a positive voltage is applied to the base relative to the emitter (\( V_{BE} \)), it reduces the potential barrier, allowing electrons from the emitter to be injected into the base. Due to the thinness of the base and the applied positive voltage at the collector, most of these electrons drift into the collector, resulting in a measurable collector current \( I_C \) \cite{Neudeck}.
+
+The relationship between the collector current \( I_C \) and the base-emitter voltage \( V_{BE} \) is described by the Ebers-Moll equation:
+
+\[
+I_C = I_S \left(e^{\frac{eV_{BE}}{kT}} - 1\right)
+\]
+
+where \( I_S \) is the saturation current, \( e \) is the elementary charge, \( k \) is Boltzmann’s constant, and \( T \) is the absolute temperature. This equation illustrates the exponential dependence of \( I_C \) on \( V_{BE} \), a fundamental property that allows transistors to function as amplifiers and switches in electronic circuits\cite{Neudeck}.
+
+The saturation current \( I_S \) itself is temperature-dependent and follows the relation:
+
+\[
+I_S \propto e^{-V_g/kT}
+\]
+
+This indicates that \( I_S \) increases exponentially with temperature as more electrons acquire sufficient energy to cross the band gap \( V_g \). By plotting \( \ln(I_S) \) against \( 1/T \), the band gap of the semiconductor can be extracted from the slope of the linear fit:
+
+\[
+\ln(I_S) = -\frac{V_g}{kT} + \text{constant}
+\]
+
+Additionally, analyzing the exponential dependence of \( I_C \) on \( V_{BE} \) at various temperatures allows for the determination of Boltzmann’s constant. The thermal voltage \( V_T \), defined as:
+
+\[
+V_T = \frac{kT}{e}
+\]
+
+also plays a crucial role in the transistor’s behavior, influencing the rate at which \( I_C \) increases with \( V_{BE} \)\cite{Collings1980}.
+
+In this experiment, we measure \( I_C \) as a function of \( V_{BE} \) at different temperatures to extract both Boltzmann’s constant and the semiconductor band gap. These measurements validate theoretical models and provide insight into the intrinsic properties of semiconductor materials like silicon and germanium.
 
 
 %=====================================================
