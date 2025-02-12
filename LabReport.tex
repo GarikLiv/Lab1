@@ -76,29 +76,15 @@
 
 Semiconductors are essential components of modern electronics due to their unique electronic properties: a valence band filled with electrons and a nearly empty conduction band, separated by an energy band gap \( E_g \). The ability of electrons to transition from the valence band to the conduction band under specific conditions, such as thermal excitation or applied voltage, forms the basis for the functionality of semiconductor devices like transistors \cite{Thornton}.
 
-<<<<<<< HEAD
-%<<<<<<< HEAD
-In this experiment, we explore the behavior of an NPN bipolar junction transistor (BJT) and focus on the relationship between the collector current \( I_C \) and the base emitter voltage \( V_{BE} \). The function of the transistor depends on the exponential dependence of \( I_C \) on \( V_{BE} \), described by the Ebers-Moll equation.
-
-%=======
-In this experiment, we investigate the behavior of an NPN bipolar junction transistor (BJT) by examining the relationship between the collector current \( I_C \) and the base-emitter voltage \( V_{BE} \). The transistor’s function depends on the exponential dependence of \( I_C \) on \( V_{BE} \), described by the Ebers-Moll equation:
-\begin{equation}\label{eq1}
-%>>>>>>> a9e140ca79745e5e2c7135285a616d71aedfce01
-=======
 In this experiment, we investigate the behavior of an NPN bipolar junction transistor (BJT) by examining the relationship between the collector current \( I_C \) and the base-emitter voltage \( V_{BE} \). The transistor’s function depends on the exponential dependence of \( I_C \) on \( V_{BE} \), described by the Ebers-Moll equation:
 
 \begin{equation}
->>>>>>> origin
 I_C = I_S \left(e^{eV_{BE}/kT} - 1\right)
 \end{equation}
 
 where \( I_S \) is the saturation current, \( e \) is the elementary charge, \( k \) is Boltzmann’s constant, and \( T \) is the absolute temperature \cite{Neudeck}. This exponential behavior arises from the Boltzmann factor, which governs the probability of electron excitation across the band gap:
 
-<<<<<<< HEAD
-\begin{equation}\label{eq2}
-=======
 \begin{equation}
->>>>>>> origin
 P(E) \propto e^{-E/kT}
 \end{equation}
 
@@ -131,11 +117,7 @@ These advancements laid the foundation for modern experimental techniques. Early
 
 Semiconductors are materials characterized by an electronic structure consisting of a valence band filled with electrons and a conduction band that is nearly empty at low temperatures. These bands are separated by an energy gap, known as the band gap \( E_g \). At absolute zero, semiconductors behave as insulators, with no electrons in the conduction band. However, at finite temperatures, some electrons gain enough thermal energy to cross the band gap, enabling electrical conduction. The likelihood of electron excitation across the band gap is determined by the Boltzmann factor:
 
-<<<<<<< HEAD
-\begin{equation}\label{eq3}
-=======
 \begin{equation}
->>>>>>> origin
 P(E) \propto e^{-E/kT}
 \end{equation}
 
@@ -151,11 +133,7 @@ An NPN bipolar junction transistor (BJT) consists of two n-doped regions (the em
 
 The relationship between the collector current \( I_C \) and the base-emitter voltage \( V_{BE} \) is described by the Ebers-Moll equation:
 
-<<<<<<< HEAD
-\begin{equation}\label{eq4}
-=======
 \begin{equation}
->>>>>>> origin
 I_C = I_S \left(e^{\frac{eV_{BE}}{kT}} - 1\right)
 \end{equation}
 
@@ -163,38 +141,21 @@ where \( I_S \) is the saturation current, \( e \) is the elementary charge, \( 
 
 The saturation current \( I_S \) itself is temperature-dependent and follows the relation:
 
-<<<<<<< HEAD
-\begin{equation}\labe{eq5}
-I_S \propto e^{-V_g/kT}
-=======
 \begin{equation}
 I_S \propto e^{-E_g/kT}
->>>>>>> origin
 \end{equation}
 
 This indicates that \( I_S \) increases exponentially with temperature as more electrons acquire sufficient energy to cross the band gap \( E_g \). By plotting \( \ln(I_S) \) against \( 1/T \), the band gap of the semiconductor can be extracted from the slope of the linear fit:
 
-<<<<<<< HEAD
-\begin{equation}\label{eq6}
-\ln(I_S) = -\frac{V_g}{kT} + \text{constant}
-=======
 \begin{equation}
 \ln(I_S) = -\frac{E_g}{kT} + \text{constant}
->>>>>>> origin
 \end{equation}
 
 Additionally, analyzing the exponential dependence of \( I_C \) on \( V_{BE} \) at various temperatures allows for the determination of Boltzmann’s constant. The thermal voltage \( V_T \), defined as:
 
-<<<<<<< HEAD
-\begin{equation}\label{eq7}
-V_T = \frac{kT}{e}
-\end{equation}
-
-=======
 \begin{equation}
 V_T = \frac{kT}{e}
 \end{equation}
->>>>>>> origin
 
 also plays a crucial role in the transistor’s behavior, influencing the rate at which \( I_C \) increases with \( V_{BE} \)\cite{Collings}.
 
@@ -209,45 +170,40 @@ In this experiment, we measure \( I_C \) as a function of \( V_{BE} \) at differ
 
 \subsection{Apparatus}
 
-This experiment investigates the temperature and voltage dependence of an NPN Bipolar Junction Transistor (BJT) by analyzing the relationship between the base-emitter voltage (\( V_{BE} \)) and the resulting collector current (\( I_C \)). The goal is to study the exponential behavior of \( I_C \) as described by the Ebers-Moll equation and to extract key physical constants such as Boltzmann’s constant and the semiconductor band gap \cite{Neudeck}.
+In this experiment, we investigated the temperature and voltage dependence of an NPN Bipolar Junction Transistor (BJT) by analyzing the relationship between the base-emitter voltage (\( V_{BE} \)) and the resulting collector current (\( I_C \)). Our goal was to study the exponential behavior of \( I_C \) as described by the Ebers-Moll equation and to extract key physical constants such as Boltzmann’s constant and the semiconductor band gap \cite{Neudeck}.
 
-The transistor is mounted on an aluminum plate to enable controlled temperature variation. Heating is provided using a GwINSTEK GPS-3030DD Laboratory DC Power Supply connected to a 25 W power resistor clamped to the plate. A Type K thermocouple, integrated with the Omega HH12C Temperature Probe, measures the transistor’s temperature with high precision, as precise thermal management is essential for accurate semiconductor characterization \cite{Grundmann}. For cryogenic measurements, the transistor is submerged in liquid nitrogen to investigate low-temperature behavior.
+We mounted the transistor on an aluminum plate to enable controlled temperature variation. We provided heating using a GwINSTEK GPS-3030DD Laboratory DC Power Supply connected to a 25 W power resistor clamped to the plate. To measure the transistor’s temperature with high precision, we used a Type K thermocouple integrated with the Omega HH12C Temperature Probe, as precise thermal management is essential for accurate semiconductor characterization \cite{Grundmann}. For cryogenic measurements, it is possible to submerge the transistor in liquid nitrogen to investigate its low-temperature behavior, though we did not do so in our experiment.
 
-A programmable voltage source, controlled via LabView’s \texttt{semiconductor.vi} and interfaced through a Texas Instruments NI USB-6341 X Series Multifunction DAQ, applies precise voltages to the base-emitter junction. The DAQ ensures synchronized voltage control and current measurements, enabling automated data collection. The collector current (\( I_C \)) is measured using a Keithley 6485 Picoammeter, which offers high sensitivity across several orders of magnitude, from nanoamps to milliamps. A 1 k\(\Omega\) resistor is placed in series with the collector to limit current and protect the transistor.
+We applied precise voltages to the base-emitter junction using a programmable voltage source controlled via LabView’s \texttt{semiconductor.vi}, interfaced through a Texas Instruments NI USB-6341 X Series Multifunction DAQ. The DAQ system ensured synchronized voltage control and current measurements, enabling automated data collection. We measured the collector current (\( I_C \)) using a Keithley 6485 Picoammeter, which provided high sensitivity across several orders of magnitude, from nanoamps to milliamps. To limit the current and protect the transistor, we placed a 1 k\(\Omega\) resistor in series with the collector.
 
-Connections between the transistor, power supply, and measurement instruments are established using BNC banana plugs, BNC female adapters, and coaxial cables to minimize electrical noise. Simple wires and a short wire are used to complete the circuit and ensure stable connections throughout the setup.
+We established connections between the transistor, power supply, and measurement instruments using BNC banana plugs, BNC female adapters, and coaxial cables to minimize electrical noise. Additionally, we used simple wires and a short wire to complete the circuit and ensure stable connections throughout the setup.
 
-The experimental procedure is also repeated with a germanium transistor to compare its temperature-dependent behavior with that of silicon, enabling validation of extracted values for Boltzmann’s constant and the band gap \cite{Collings}.
+We also repeated the experimental procedure with a germanium transistor to compare its temperature-dependent behavior with that of silicon, allowing us to validate the extracted values for Boltzmann’s constant and the band gap \cite{Collings}.
 
-<<<<<<< HEAD
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.5\textwidth]{experimental_setup.png}
-=======
+
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=3in, height=2in]{Apparatus Final.jpg}}
->>>>>>> origin
 \caption{Schematic of the experimental setup, including the NPN BJT transistor, Keithley Picoammeter, DC power supply, and temperature control system.}
 \label{fig}
 \end{figure}
+
 
 %=====================================================
 %============ Importing pictures  ====================
 %=====================================================
 
+
 \subsection{Data Collection}
-We setup our circuit to have a variable supply of voltage to the base ($V_{be}$) while measuring the collector current ($I_c$) readings from the pico ampmeter.
-We then supplied voltage to the thermocouple and watied for the temperature of the transistor to reasonbly level out before we recorded a $I_c \text{ vs } V_{be}$ data set.
 
+Our data collection process focused on measuring the collector current (\( I_C \)) as a function of the base-emitter voltage (\( V_{BE} \)) across different temperatures for both silicon and germanium NPN bipolar junction transistors. We designed the experiment to investigate the exponential dependence of \( I_C \) on \( V_{BE} \) as predicted by the Ebers-Moll equation and extract key physical values such as the thermal voltage, Boltzmann’s constant, and band gap.
 
-%Data taking procedures should be described and various modes of
-%data collection explained. Calibration procedures and
-%relevant plots and numerical tables should be included.
-%State clearly what measurements were taken for the final
-%data analysis. Describe `doing the experiment' so it would
-%be helpful to other students in the future. This may need
-%to include physics arguments {\em what } and {\em how } data should
-%be collected.
+We used the DAQ system, controlled via LabVIEW to program voltage sweeps across the base-emitter junction. We varied the base-emitter voltage incrementally over a range of values to capture the transistor's response. Then, we measured the collector current using a Keithley 6485 Picoammeter. We included a 1 k$\Omega$ resistor in series with the collector to limit the current and prevent damage to the transistor.
+
+We achieved temperature variation using a 25-watt power resistor clamped to an aluminum plate, which housed the transistor. We inserted a thermocouple (Omega HH12C Temperature Probe) beneath the transistor to monitor the temperature accurately. This allowed the collection of data over a broad temperature range, enabling our observation of temperature-dependent behaviors in both silicon and germanium transistors.
+
+Prior to data collection, we zeroed the picoammeter to eliminate background noise and calibrated the thermocouple using a known temperature reference point. We tested the DAQ system to ensure accurate voltage output and adjusted the LabVIEW settings to minimize voltage fluctuation during sweeps.
+
+Our measurements included the collector current (\( I_C \)) as a function of base-emitter voltage (\( V_{BE} \)) at various temperatures. These datasets were later analyzed to fit the Ebers-Moll equation and extract key parameters such as the thermal voltage, saturation current, Boltzmann’s constant, and the semiconductor band gap. We repeated the same procedure with a germanium transistor to compare its temperature-dependent behavior with that of silicon.
 
 
 \subsection{Data Analysis}
