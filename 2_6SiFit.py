@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 from scipy.stats import linregress
+import statsmodels.api as sm
 
 k = 1.380649E-23
 e = 1.60217663E-19
@@ -174,6 +175,12 @@ def thermVolt(T,k):
 
 Temps = np.array([Vdata[i][1] + 273 for i in range(9)])
 VoltsT = np.array([fitData[i][0][0] for i in range(9)])
+ErrVT = np.array([np.sqrt(np.diag(fitData[i][1]))[0] for i in range(9)])
+VarVT = np.array([ErrVT[x]**2 for x in range(9)])
+weightVT = np.array([1/VarVT[x] for x in range(9)])
+model = sm.WLS(VoltsT, Temps, weights = weightVT)
+results = model.fit()
+print(results.summary())
 Temps = Temps[:,np.newaxis]
 a, _, _, _ = np.linalg.lstsq(Temps, VoltsT)
 print(a)

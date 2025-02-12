@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 13:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 18:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -147,63 +147,157 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 1038) in paragraph at lines 112--119
-\OT1/cmr/m/n/12 be briefly dis-cussed. En-close ref-er-ences.
- []
-
-
-Underfull \vbox (badness 3271) has occurred while \output is active []
-
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-<2_6SiBoltz.png, id=14, 442.2924pt x 315.8199pt>
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+[]\OT1/cmr/m/n/12 The sat-u-ra-tion cur-rent $\OML/cmm/m/it/12 I[]$ \OT1/cmr/m/n/12 it-self is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+\OT1/cmr/m/n/12 temperature-dependent and fol-lows the
+ []
+
+[3]
+Underfull \hbox (badness 1038) in paragraph at lines 169--176
+\OT1/cmr/m/n/12 be briefly dis-cussed. En-close ref-er-ences.
+ []
+
+<2_6SiBoltz.png, id=22, 442.2924pt x 315.8199pt>
 File: 2_6SiBoltz.png Graphic file (type png)
 <use 2_6SiBoltz.png>
-Package pdftex.def Info: 2_6SiBoltz.png  used on input line 149.
+Package pdftex.def Info: 2_6SiBoltz.png  used on input line 203.
 (pdftex.def)             Requested size: 234.5pt x 167.4464pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 149--150
+Overfull \hbox (5.0pt too wide) in paragraph at lines 203--204
+[][] 
+ []
+
+<GeBoltz.png, id=24, 430.0065pt x 315.8199pt>
+File: GeBoltz.png Graphic file (type png)
+<use GeBoltz.png>
+Package pdftex.def Info: GeBoltz.png  used on input line 207.
+(pdftex.def)             Requested size: 234.5pt x 172.22685pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 207--208
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<linSiSatCurrent.png, id=25, 424.9476pt x 315.8199pt>
+File: linSiSatCurrent.png Graphic file (type png)
+<use linSiSatCurrent.png>
+Package pdftex.def Info: linSiSatCurrent.png  used on input line 213.
+(pdftex.def)             Requested size: 234.5pt x 174.27975pt.
 
-Underfull \vbox (badness 3965) has occurred while \output is active []
+Overfull \hbox (5.0pt too wide) in paragraph at lines 213--214
+[][] 
+ []
+
+<linGeSatCurrent.png, id=26, 428.5611pt x 315.8199pt>
+File: linGeSatCurrent.png Graphic file (type png)
+<use linGeSatCurrent.png>
+Package pdftex.def Info: linGeSatCurrent.png  used on input line 217.
+(pdftex.def)             Requested size: 234.5pt x 172.81477pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 217--218
+[][] 
+ []
+
+[4 <./2_6SiBoltz.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 244--244
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 312--312
 []\OT1/cmr/bx/n/17.28 Summary and conl-cu-
  []
 
 
-Underfull \vbox (badness 1354) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2 <./2_6SiBoltz.png>] [3
 
-] (./LabReport.aux)
+./LabReport.tex:329: Undefined control sequence.
+l.329 \href
+           {https://doi.org/10.1119/1.12172}{https://doi.org/10.1119/1.12172}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--330
+[]\OT1/cmr/m/n/12 P. J. Collings, \OT1/cmr/m/it/12 Sim-ple mea-sure-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--330
+\OT1/cmr/m/it/12 ment of the band gap in sil-i-con
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--330
+\OT1/cmr/m/it/12 and ger-ma-nium\OT1/cmr/m/n/12 , Amer-i-can Jour-nal
+ []
+
+
+Underfull \hbox (badness 6725) in paragraph at lines 326--330
+\OT1/cmr/m/n/12 of Physics, \OT1/cmr/bx/n/12 48\OT1/cmr/m/n/12 (3), 197--199 (1980).
+ []
+
+
+Overfull \hbox (119.86304pt too wide) in paragraph at lines 326--330
+\OT1/cmr/m/n/12 https://doi.org/10.1119/1.12172https://doi.org/10.1119/1.12172 
+ []
+
+./LabReport.tex:335: Undefined control sequence.
+l.335 Available: \url
+                     {https://doi.org/10.26636/jtit.2010.1.1015}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--336
+\OT1/cmr/m/it/12 mu-ni-ca-tions and In-for-ma-tion Tech-
+ []
+
+[5 <./GeBoltz.png> <./linSiSatCurrent.png>]
+Underfull \hbox (badness 2980) in paragraph at lines 338--341
+[]\OT1/cmr/m/n/12 G. W. Neudeck, \OT1/cmr/m/it/12 The Bipo-lar Junc-
+ []
+
+[6
+
+ <./linGeSatCurrent.png>] (./LabReport.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2020 strings out of 476076
- 30173 string characters out of 5793775
- 1934187 words of memory out of 5000000
- 24146 multiletter control sequences out of 15000+600000
+ 2047 strings out of 476076
+ 30706 string characters out of 5793775
+ 1937187 words of memory out of 5000000
+ 24173 multiletter control sequences out of 15000+600000
  564709 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,8n,65p,458b,237s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on LabReport.pdf (3 pages, 142455 bytes).
+ 56i,8n,65p,808b,237s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on LabReport.pdf (6 pages, 226757 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

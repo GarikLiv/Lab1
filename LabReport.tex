@@ -180,7 +180,8 @@ instruction manual.
 %=====================================================
 
 \subsection{Data Collection}
-
+We setup our circuit to have a variable supply of voltage to the base ($V_{be}$) while measuring the collector current ($I_c$) readings from the pico ampmeter.
+We then supplied voltage to the thermocouple and watied for the temperature of the transistor to reasonbly level out before we recorded a $I_c \text{ vs } V_{be}$ data set.
 
 
 %Data taking procedures should be described and various modes of
@@ -194,19 +195,29 @@ instruction manual.
 
 
 \subsection{Data Analysis}
-
-We setup our circuit to have a variable supply of voltage to the base ($V_{be}$) while measuring the  collector current ($I_c$) readings from the pico ampmeter . We took the dataset of $V_{be} \text{ vs } I_c$ and fitted it to Ebbers moll equation
-
-\begin{equation}
-	I_c = I_s(e^{\frac{V_{be}}{V_T}}-1).
-\end{equation}
-$V_T = \frac{kT}{e}$ where e is the charge of an electron, T is the temperature in Kelvin, and k is boltzman constnt. By fitting our dataset to this equation we determined an experimental value for $V_T$. We then repeated our measurements with variable temperature and created a linear graph of $T \text{ vs } V_T$ where we expect the slope to equal $\frac{k}{e}$. 
+We took the dataset of $I_c \text{ vs }V_{be}$ and fitted it to Ebbers moll equation.
+By fitting our dataset to this equation we determined an experimental value for $V_T$ using the curve fit function from scipy.
+We then performed a least square analysis on our $V_T \text{ vs } T$ dataset where we expect the slope to equal $\frac{k}{e}$. We performed this analysis on the dataset from both the silicon and germanium transistor. 
 
 \begin{figure}[h]
 	\includegraphics[width = .5\textwidth]{2_6SiBoltz.png}
-		\caption{Temperature vs Thermal Voltage graph. The data points collected are represented by the black dots, our best-fit slope is the solid black curve, and the expected slope of $\frac{k}{e}$ is the solid blue curve.}
-	
+	\caption{Silicon temperature vs thermal voltage graph. The data points collected are represented by the black dots, our best-fit slope is the solid black curve, and the expected slope of $\frac{k}{e}$ is the solid blue curve.\label{g1}}
 \end{figure}
+\begin{figure}[h]
+	\includegraphics[width = .5\textwidth]{GeBoltz.png}
+	\caption{Germanium temperature vs thermal voltage graph. The data points collected are represented by the black dots, our best-fit slope is the solid black curve, and the expected slope of $\frac{k}{e}$ is the solid blue curve.\label{g2}}
+\end{figure}
+From our $I_c \text{ vs } V_{be}$ dataset, we also determined an experimental value for $I_s$ using the curve fit funciton from scipy.
+As our range of temperatures [296K,316K] was small, we performed a linear regression on the $\ln(I_s) \text{ vs }\frac{1}{T}$ dataset.
+\begin{figure}[h]
+	\includegraphics[width = .5\textwidth]{linSiSatCurrent.png}
+	\caption{Silicon saturation current vs temperature. The data points collected are represented by the black dots, and our best-fit slope is the solid black curve.\label{g3}}
+\end{figure}
+\begin{figure}[h]
+	\includegraphics[width = .5\textwidth]{linGeSatCurrent.png}
+	\caption{Germanium saturation current vs temperature. The data points collected are represented by the black dots, and our best-fit slope is the solid black curve.\label{g4}}
+\end{figure}
+We calculated the 
 
 %This is the most important section of the report.
 %Describe data analysis. Details! Perhaps include a figure and refer
