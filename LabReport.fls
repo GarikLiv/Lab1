@@ -69,6 +69,18 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT LabReport.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./NPN BJT.jpg
+INPUT ./NPN BJT.jpg
+INPUT ./NPN BJT.jpg
+INPUT ./NPN BJT.jpg
+INPUT ./NPN BJT.jpg
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT ./Apparatus Final.jpg
+INPUT ./Apparatus Final.jpg
+INPUT ./Apparatus Final.jpg
+INPUT ./Apparatus Final.jpg
+INPUT ./Apparatus Final.jpg
 INPUT ./2_6SiBoltz.png
 INPUT ./2_6SiBoltz.png
 INPUT ./2_6SiBoltz.png
@@ -90,7 +102,6 @@ INPUT ./linGeSatCurrent.png
 INPUT ./linGeSatCurrent.png
 INPUT ./linGeSatCurrent.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT LabReport.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
@@ -103,3 +114,4 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
