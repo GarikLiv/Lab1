@@ -233,3 +233,6 @@ plt.plot(intervalT,intervalT*a,color="black",linewidth=1.2,label="Best-Fit Curve
 plt.plot(intervalT,intervalT*k/e,color="blue",linewidth=1.2,label="Expected Thermal Voltage Curve")
 plt.legend()
 plt.savefig("GeBoltz.png",bbox_inches="tight")
+
+for i in range (size):
+    print(str(float(Temps[i])) + ' & ' + str(fitData[i][0][0])[:8] + ' & '+ str(np.sqrt(np.diag(fitData[i][1]))[0]))

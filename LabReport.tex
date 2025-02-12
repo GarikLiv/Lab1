@@ -16,6 +16,9 @@
 \usepackage{amsmath}
 \usepackage{graphics}
 \usepackage{graphicx} %more modern version of graphics
+\usepackage{caption}
+\usepackage[section]{placeins}
+\usepackage{float}
 %\graphicspath{{path-to-folder-containing-necessary-graphics}{other folder as necessary}}
 
 
@@ -73,17 +76,22 @@
 
 Semiconductors are essential components of modern electronics due to their unique electronic properties: a valence band filled with electrons and a nearly empty conduction band, separated by an energy band gap \( V_g \). The ability of electrons to transition from the valence band to the conduction band under specific conditions, such as thermal excitation or applied voltage, forms the basis for the functionality of semiconductor devices like transistors \cite{Thornton}.
 
+<<<<<<< HEAD
 In this experiment, we explore the behavior of an NPN bipolar junction transistor (BJT) and focus on the relationship between the collector current \( I_C \) and the base emitter voltage \( V_{BE} \). The function of the transistor depends on the exponential dependence of \( I_C \) on \( V_{BE} \), described by the Ebers-Moll equation.
 
 \[
+=======
+In this experiment, we investigate the behavior of an NPN bipolar junction transistor (BJT) by examining the relationship between the collector current \( I_C \) and the base-emitter voltage \( V_{BE} \). The transistor’s function depends on the exponential dependence of \( I_C \) on \( V_{BE} \), described by the Ebers-Moll equation:
+\begin{equation}\label{eq1}
+>>>>>>> a9e140ca79745e5e2c7135285a616d71aedfce01
 I_C = I_S \left(e^{eV_{BE}/kT} - 1\right)
-\]
+\end{equation}
 
 where \( I_S \) is the saturation current, \( e \) is the elementary charge, \( k \) is the Boltzmann constant and \( T \) is the absolute temperature \cite{Neudeck}. This exponential behavior arises from the Boltzmann factor, which governs the probability of electron excitation across the band gap:
 
-\[
+\begin{equation}\label{eq2}
 P(E) \propto e^{-E/kT}
-\]
+\end{equation}
 
 By measuring \( I_C \) as a function of \( V_{BE} \) at different temperatures, we can extract both Boltzmann’s constant and the band gap of the semiconductor material. This experiment not only reinforces the theoretical principles of semiconductor physics, but also demonstrates the practical application of transistors in amplification and switching, which are fundamental to all modern electronic devices \cite{Thornton}.
 
@@ -104,9 +112,9 @@ These advancements laid the foundation for modern experimental techniques. Early
 
 Semiconductors are materials characterized by an electronic structure consisting of a valence band filled with electrons and a conduction band that is nearly empty at low temperatures. These bands are separated by an energy gap, known as the band gap \( V_g \). At absolute zero, semiconductors behave as insulators, with no electrons in the conduction band. However, at finite temperatures, some electrons gain enough thermal energy to cross the band gap, enabling electrical conduction. The likelihood of electron excitation across the band gap is determined by the Boltzmann factor:
 
-\[
+\begin{equation}\label{eq3}
 P(E) \propto e^{-E/kT}
-\]
+\end{equation}
 
 where \( E \) is the energy required for excitation, \( k \) is Boltzmann’s constant, and \( T \) is the absolute temperature\cite{Thornton}.
 
@@ -114,29 +122,30 @@ An NPN bipolar junction transistor (BJT) consists of two n-doped regions (the em
 
 The relationship between the collector current \( I_C \) and the base-emitter voltage \( V_{BE} \) is described by the Ebers-Moll equation:
 
-\[
+\begin{equation}\label{eq4}
 I_C = I_S \left(e^{\frac{eV_{BE}}{kT}} - 1\right)
-\]
+\end{equation}
 
 where \( I_S \) is the saturation current, \( e \) is the elementary charge, \( k \) is Boltzmann’s constant, and \( T \) is the absolute temperature. This equation illustrates the exponential dependence of \( I_C \) on \( V_{BE} \), a fundamental property that allows transistors to function as amplifiers and switches in electronic circuits\cite{Neudeck}.
 
 The saturation current \( I_S \) itself is temperature-dependent and follows the relation:
 
-\[
+\begin{equation}\labe{eq5}
 I_S \propto e^{-V_g/kT}
-\]
+\end{equation}
 
 This indicates that \( I_S \) increases exponentially with temperature as more electrons acquire sufficient energy to cross the band gap \( V_g \). By plotting \( \ln(I_S) \) against \( 1/T \), the band gap of the semiconductor can be extracted from the slope of the linear fit:
 
-\[
+\begin{equation}\label{eq6}
 \ln(I_S) = -\frac{V_g}{kT} + \text{constant}
-\]
+\end{equation}
 
 Additionally, analyzing the exponential dependence of \( I_C \) on \( V_{BE} \) at various temperatures allows for the determination of Boltzmann’s constant. The thermal voltage \( V_T \), defined as:
 
-\[
+\begin{equation}\label{eq7}
 V_T = \frac{kT}{e}
-\]
+\end{equation}
+
 
 also plays a crucial role in the transistor’s behavior, influencing the rate at which \( I_C \) increases with \( V_{BE} \)\cite{Collings1980}.
 
@@ -180,56 +189,127 @@ We then supplied voltage to the thermocouple and watied for the temperature of t
 
 
 \subsection{Data Analysis}
-We took the dataset of $I_c \text{ vs }V_{be}$ and fitted it to Ebbers moll equation.
+\subsubsection{$V_T \text{ vs } T$}
+We took the dataset of $I_c \text{ vs }V_{be}$ and fitted it to \ref{eq4}.
 By fitting our dataset to this equation we determined an experimental value for $V_T$ using the curve fit function from scipy.
-We then performed a least square analysis on our $V_T \text{ vs } T$ dataset where we expect the slope to equal $\frac{k}{e}$. We performed this analysis on the dataset from both the silicon and germanium transistor. 
 
-\begin {table}[h]
-{
-{%\footnotesize
+\begin {table}[H]
+\caption*{Silicon Data}
+{\footnotesize
 \begin {center}
-\begin {tabular} {c | c | c }
+\begin {tabular} {|c | c | c| }
 \hline
 Temps (K) 			&    $V_T$		& Err($V_T$)\\
-\hline  &\\
+\hline  &&\\
 296.4   & 0.0247 &  0.000137\\
-\hline  & \\
+\hline  && \\
 297.4   & 0.02554 &  3.54e-05\\
-\hline  & \\
+\hline  && \\
 298.8   & 0.02568 &  2.763e-05\\
-\hline  & \\
+\hline  && \\
 300.1   & 0.02579 &  3.376e-05\\
-\hline  & \\
+\hline  && \\
 302.0   & 0.02599 &  3.060e-05\\
-\hline  & \\
+\hline  && \\
 306.1   & 0.02644 &  2.216e-05\\
-\hline  & \\
+\hline  && \\
 307.5   & 0.02659 &  2.194e-05\\
-\hline  & \\
+\hline  && \\
 313.3   & 0.02718 &  1.825e-05\\
-\hline  & \\
+\hline  && \\
 316.1	& 0.02746 &  1.864e-05\\
 \hline% \hline
 \end {tabular}
 \end {center}
 }
-}
-\caption {\label{tab:events}
-Predicted and observed numbers of events classified in the Far Detector as fully and
-partially reconstructed charged current interactions shown for all running periods.
- }
+\caption{\label{tab1} $V_T \text{ vs } T$ data for silicon transistor}
 \end {table}
 
-\begin{figure}[h]
+\begin {table}[H]
+\caption*{Germanium Data}
+{\footnotesize
+\begin {center}
+\begin {tabular} {|c | c | c| }
+\hline
+Temps (K) 			&    $V_T$		& Err($V_T$)\\
+\hline&&\\
+296.4 & 0.104 & 0.00211\\
+\hline  && \\
+296.6 & 0.104 & 0.00211\\
+\hline  && \\
+297.4 & 0.104 & 0.00209\\
+\hline  && \\
+298.5 & 0.105 & 0.00215\\
+\hline  && \\
+300.0 & 0.105 & 0.00210\\
+\hline  && \\
+301.7 & 0.106 & 0.00221\\
+\hline  && \\
+302.1 & 0.106 & 0.00215\\
+\hline  && \\
+305.5 & 0.107 & 0.00222 \\
+\hline  && \\
+307.1 & 0.107 & 0.00213 \\
+\hline  && \\
+308.1 & 0.109 & 0.00228\\
+\hline  && \\
+312.6 & 0.109 & 0.00230\\
+\hline  && \\
+315.2 & 0.110 & 0.00236\\
+\hline% \hline
+\end {tabular}
+\end {center}
+}
+\caption{\label{tab2} $V_T \text{ vs } T$ data for germanium transistor}
+\end {table}
+
+We then performed a weighted least square analysis on \ref{eq7} with the variance of $V_T$ found from curve fit.We expected the slope to equal $\frac{k}{e}$. We performed this analysis for both the silicon and germanium transistor data. 
+
+\begin{figure}[H]
 	\includegraphics[width = .5\textwidth]{2_6SiBoltz.png}
 	\caption{Silicon temperature vs thermal voltage graph. The data points collected are represented by the black dots, our best-fit slope is the solid black curve, and the expected slope of $\frac{k}{e}$ is the solid blue curve.\label{g1}}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
 	\includegraphics[width = .5\textwidth]{GeBoltz.png}
 	\caption{Germanium temperature vs thermal voltage graph. The data points collected are represented by the black dots, our best-fit slope is the solid black curve, and the expected slope of $\frac{k}{e}$ is the solid blue curve.\label{g2}}
 \end{figure}
+
+\subsubsection{$I_s \text{ vs }T$}
 From our $I_c \text{ vs } V_{be}$ dataset, we also determined an experimental value for $I_s$ using the curve fit funciton from scipy.
-As our range of temperatures [296K,316K] was small, we performed a linear regression on the $\ln(I_s) \text{ vs }\frac{1}{T}$ dataset.
+As our range of temperatures [296K,316K] was small, we performed a least squares analysis on \ref{eq6}
+
+\begin {table}[H]
+\caption*{Silicon Data}
+{\footnotesize
+\begin {center}
+\begin {tabular} {c | c | c }
+\hline
+Temps (K) 			&    $I_s$(Pico Amps) & Err($I_s$)\\
+\hline  &\\
+296.4   & 0.24 & 0.0243\\
+\hline  & \\
+297.4   & 0.46 & 0.0121\\
+\hline  & \\
+298.8   &0.59  & 0.0120\\
+\hline  & \\
+300.1   &0.73  &  0.0179\\
+\hline  & \\
+302.0   &1.00  & 0.0220\\
+\hline  & \\
+306.1   &2.09  &  0.0320\\
+\hline  & \\
+307.5   &2.65  &  0.0397\\
+\hline  & \\
+313.3   &6.84  &  0.0816\\
+\hline  & \\
+316.1	&10.2  & 0.122\\
+\hline% \hline
+\end {tabular}
+\end {center}
+\caption{\label{tab1} $I_s \text{ vs } T$ data for silicon transistor}
+}
+\end{table}
+
 \begin{figure}[h]
 	\includegraphics[width = .5\textwidth]{linSiSatCurrent.png}
 	\caption{Silicon saturation current vs temperature. The data points collected are represented by the black dots, and our best-fit slope is the solid black curve.\label{g3}}

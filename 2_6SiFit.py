@@ -128,6 +128,17 @@ paramsSat = linregress(Trecip,lnIs)
 print(paramsSat)
 print(-k*paramsSat[0]/e)
 print(-k*linCurrSlope/e)
+'''
+Test
+'''
+ErrIs = np.array([np.log(np.sqrt(np.diag(fitData[i][1]))[1]) for i in range(9)])
+VarIs = np.array([ErrIs[x]**2 for x in range(9)])
+weightIs = np.array([1/VarIs[x] for x in range(9)])
+TrecipInt = sm.add_constant(Trecip)
+model = sm.WLS(lnIs, TrecipInt, weights = weightIs)
+results = model.fit()
+print(results.summary())
+
 intervalT = np.linspace(290,320,1000)
 plt.figure()
 plt.xlabel('1/T (Kelvin)^-1',fontsize = 14)
@@ -175,11 +186,11 @@ def thermVolt(T,k):
 
 Temps = np.array([Vdata[i][1] + 273 for i in range(9)])
 VoltsT = np.array([fitData[i][0][0] for i in range(9)])
-ErrVT = np.array([np.sqrt(np.diag(fitData[i][1]))[0] for i in range(9)])
-VarVT = np.array([ErrVT[x]**2 for x in range(9)])
+VarVT = np.array([np.diag(fitData[i][1])[0] for i in range(9)])
 weightVT = np.array([1/VarVT[x] for x in range(9)])
 model = sm.WLS(VoltsT, Temps, weights = weightVT)
 results = model.fit()
+print(results.params[0])
 print(results.summary())
 Temps = Temps[:,np.newaxis]
 a, _, _, _ = np.linalg.lstsq(Temps, VoltsT)
@@ -206,7 +217,7 @@ plt.xlim(290,320)
 plt.xlabel('T (Kelvin)',fontsize=14)
 plt.ylabel('V_T (Volts)',fontsize=14)
 plt.scatter(Temps,VoltsT,color="black",label="data",s=5)
-plt.plot(intervalT,intervalT*a,color="black",linewidth=1.2,label="Best-Fit Curve")
+plt.plot(intervalT,intervalT*results.params[0],color="black",linewidth=1.2,label="Best-Fit Curve")
 plt.plot(intervalT,intervalT*k/e,color="blue",linewidth=1.2,label="Expected Thermal Voltage Curve")
 plt.legend()
 plt.savefig("2_6SiBoltz.png",bbox_inches="tight")
@@ -215,6 +226,10 @@ for i in range (9):
     print(Temps[i])
 for i in range (9):
     print(str(fitData[i][0][0])[:8] + ' '+ str(np.sqrt(np.diag(fitData[i][1]))[0]))
+print("Current")
+for i in range (9):
+    print(str(fitData[i][0][1]*1E12)[:8] + ' '+ str(np.sqrt(np.diag(fitData[i][1]))[1]*1E12))
+print(fitData[0][1])
 """
 [Outlier Code]
 truncTemps = Temps[1:9]
