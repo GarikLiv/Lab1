@@ -253,3 +253,5 @@ plt.savefig("GeBoltz.png",bbox_inches="tight")
 
 for i in range (size):
     print(str(float(Temps[i])) + ' & ' + str(fitData[i][0][0])[:8] + ' & '+ str(np.sqrt(np.diag(fitData[i][1]))[0]))
+for i in range (size):
+    print(str(float(Temps[i])) + ' & ' + str(fitData[i][0][1])[:8] + ' & '+ str(np.sqrt(np.diag(fitData[i][1]))[1]))
