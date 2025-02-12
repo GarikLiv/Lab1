@@ -1,0 +1,804 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 22:26
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**LabReport.tex
+(./LabReport.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen141
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count196
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count197
+\leftroot@=\count198
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count199
+\DOTSCASE@=\count266
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen143
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count267
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count268
+\dotsspace@=\muskip16
+\c@parentequation=\count269
+\dspbrk@lvl=\count270
+\tag@help=\toks18
+\row@=\count271
+\column@=\count272
+\maxfields@=\count273
+\andhelp@=\toks19
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
+\@envbody=\toks20
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+) (/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen152
+\captionmargin=\dimen153
+\caption@leftmargin=\dimen154
+\caption@rightmargin=\dimen155
+\caption@width=\dimen156
+\caption@indent=\dimen157
+\caption@parindent=\dimen158
+\caption@hangindent=\dimen159
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count274
+\c@continuedfloat=\count275
+) (/usr/share/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count276
+\float@exts=\toks23
+\float@box=\box53
+\@float@everytoks=\toks24
+\@floatcapt=\box54
+) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count277
+\l__pdf_internal_box=\box55
+) (./LabReport.aux
+
+./LabReport.aux:9: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 <
+     <<<<<< HEAD
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Label `tab1' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `g1' multiply defined.
+
+
+LaTeX Warning: Label `g2' multiply defined.
+
+
+LaTeX Warning: Label `g3' multiply defined.
+
+
+LaTeX Warning: Label `Thornton' multiply defined.
+
+
+LaTeX Warning: Label `g4' multiply defined.
+
+)
+\openout1 = `LabReport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count278
+\scratchdimen=\dimen160
+\scratchbox=\box56
+\nofMPsegments=\count279
+\nofMParguments=\count280
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count281
+\MPscratchDim=\dimen161
+\MPnumerator=\count282
+\makeMPintoPDFobject=\count283
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2
+
+]
+
+./LabReport.tex:88: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...ationship between the collector current \(
+                                                   I_C \) and the base-emitt...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./LabReport.tex:88: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...ip between the collector current \( I_C \)
+                                                   and the base-emitter volt...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./LabReport.tex:88: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ... \( I_C \) and the base-emitter voltage \(
+                                                   V_{BE} \). The transistor...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./LabReport.tex:88: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ... and the base-emitter voltage \( V_{BE} \)
+                                                  . The transistor’s funct...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 88.
+
+
+./LabReport.tex:88: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...epends on the exponential dependence of \(
+                                                   I_C \) on \( V_{BE} \), d...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./LabReport.tex:88: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...on the exponential dependence of \( I_C \)
+                                                   on \( V_{BE} \), describe...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./LabReport.tex:88: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ... exponential dependence of \( I_C \) on \(
+                                                   V_{BE} \), described by t...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./LabReport.tex:88: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...al dependence of \( I_C \) on \( V_{BE} \)
+                                                  , described by the Ebers-M...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./LabReport.tex:89: Missing $ inserted.
+<inserted text> 
+                $
+l.89 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./LabReport.tex:89: Display math should end with $$.
+<to be read again> 
+                   \tex_par:D 
+l.89 
+     
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (1344.82425pt too wide) detected at line 89
+[]\OT1/cmr/m/n/12 ======= \OML/cmm/m/it/12 Inthisexperiment; weinvestigatethebehaviorofanNPNbipolarjunctiontransistor\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 BJT\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 byexaminingtherelationshipbetweenthecollectorcurrentI[]andthebase \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 emittervoltageV[]:Thetransistor[]sfunctiondependsontheexponentialdependenceofI[]onV[]; describedbytheEbers \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 Mollequation \OT1/cmr/m/n/12 :
+ []
+
+
+./LabReport.tex:100: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \begin{equation}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./LabReport.tex:103: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.103 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (15.46582pt too wide) detected at line 103
+[]\OT1/cmr/m/n/12 ======= []\OML/cmm/m/it/12 >>>>>>> originP\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 E\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 / \OML/cmm/m/it/12 e[]
+ []
+
+
+LaTeX Warning: Citation `Collings' on page 3 undefined on input line 122.
+
+[3]
+
+LaTeX Warning: Citation `Grundmann' on page 4 undefined on input line 124.
+
+
+./LabReport.tex:137: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \begin{equation}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./LabReport.tex:140: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.140 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (15.46582pt too wide) detected at line 140
+[]\OT1/cmr/m/n/12 ======= []\OML/cmm/m/it/12 >>>>>>> originP\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 E\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 / \OML/cmm/m/it/12 e[]
+ []
+
+<NPN BJT.jpg, id=22, 2252.415pt x 540.0175pt>
+File: NPN BJT.jpg Graphic file (type jpg)
+<use NPN BJT.jpg>
+Package pdftex.def Info: NPN BJT.jpg  used on input line 147.
+(pdftex.def)             Requested size: 346.88673pt x 72.26472pt.
+
+./LabReport.tex:157: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157 \begin{equation}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./LabReport.tex:160: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.160 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (42.07553pt too wide) detected at line 160
+[]\OT1/cmr/m/n/12 ======= []\OML/cmm/m/it/12 >>>>>>> originI[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 I[] []
+ []
+
+[4 <./NPN BJT.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+[]\OT1/cmr/m/n/12 The sat-u-ra-tion cur-rent $\OML/cmm/m/it/12 I[]$ \OT1/cmr/m/n/12 it-self is
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+\OT1/cmr/m/n/12 temperature-dependent and fol-lows the
+ []
+
+./LabReport.tex:167: Undefined control sequence.
+l.167 \begin{equation}\labe
+                           {eq5}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./LabReport.tex:170: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 \begin{equation}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./LabReport.tex:173: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.173 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (90.74586pt too wide) detected at line 173
+[][]\OML/cmm/m/it/12 I[] \OMS/cmsy/m/n/12 / \OML/cmm/m/it/12 e[] \OT1/cmr/m/n/12 ======= []\OML/cmm/m/it/12 I[] \OMS/cmsy/m/n/12 / \OML/cmm/m/it/12 e[] >>>>>>> origin
+ []
+
+
+./LabReport.tex:181: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 \begin{equation}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./LabReport.tex:184: Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.184 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (194.96155pt too wide) detected at line 184
+[][]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 I[]\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 ^^@[] \OT1/cmr/m/n/12 + [] ======= [][](\OML/cmm/m/it/12 I[]\OT1/cmr/m/n/12 ) = \OMS/cmsy/m/n/12 ^^@[] \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 >>>>>>> origin
+ []
+
+
+LaTeX Warning: Citation `Collings' on page 5 undefined on input line 199.
+
+
+LaTeX Warning: Citation `Grundmann' on page 5 undefined on input line 214.
+
+[5]
+
+LaTeX Warning: Citation `Collings' on page 6 undefined on input line 220.
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 220--221
+\OT1/cmr/m/n/12 peated with a ger-ma-nium tran-sis-tor to
+ []
+
+
+LaTeX Warning: File `experimental_setup.png' not found on input line 225.
+
+
+./LabReport.tex:225: Package pdftex.def Error: File `experimental_setup.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.225 ...th=0.5\textwidth]{experimental_setup.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<Apparatus Final.jpg, id=29, 1870.99pt x 1320.935pt>
+File: Apparatus Final.jpg Graphic file (type jpg)
+<use Apparatus Final.jpg>
+Package pdftex.def Info: Apparatus Final.jpg  used on input line 228.
+(pdftex.def)             Requested size: 216.80089pt x 144.53737pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 225--232
+ [][] 
+ []
+
+<2_6SiBoltz.png, id=30, 442.2924pt x 315.8199pt>
+File: 2_6SiBoltz.png Graphic file (type png)
+<use 2_6SiBoltz.png>
+Package pdftex.def Info: 2_6SiBoltz.png  used on input line 330.
+(pdftex.def)             Requested size: 234.5pt x 167.4464pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 330--331
+[][] 
+ []
+
+<GeBoltz.png, id=32, 430.0065pt x 315.8199pt>
+File: GeBoltz.png Graphic file (type png)
+<use GeBoltz.png>
+Package pdftex.def Info: GeBoltz.png  used on input line 334.
+(pdftex.def)             Requested size: 234.5pt x 172.22685pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 334--335
+[][] 
+ []
+
+
+./LabReport.tex:374: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.374 \begin{figure}[h]
+                       
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<linSiSatCurrent.png, id=33, 424.9476pt x 315.8199pt>
+File: linSiSatCurrent.png Graphic file (type png)
+<use linSiSatCurrent.png>
+Package pdftex.def Info: linSiSatCurrent.png  used on input line 375.
+(pdftex.def)             Requested size: 234.5pt x 174.27975pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 375--376
+[][] 
+ []
+
+
+./LabReport.tex:378: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.378 \begin{figure}[h]
+                       
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<linGeSatCurrent.png, id=34, 428.5611pt x 315.8199pt>
+File: linGeSatCurrent.png Graphic file (type png)
+<use linGeSatCurrent.png>
+Package pdftex.def Info: linGeSatCurrent.png  used on input line 379.
+(pdftex.def)             Requested size: 234.5pt x 172.81477pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 379--380
+[][] 
+ []
+
+./LabReport.tex:462: Undefined control sequence.
+l.462 ...an experimental value of $k = 1.389 \tims
+                                                   10^{-23} \pm 2.19 \times ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./LabReport.tex:484: Undefined control sequence.
+l.484 \href
+           {https://doi.org/10.1119/1.12172}{https://doi.org/10.1119/1.12172}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--485
+[]\OT1/cmr/m/n/12 P. J. Collings, \OT1/cmr/m/it/12 Sim-ple mea-sure-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--485
+\OT1/cmr/m/it/12 ment of the band gap in sil-i-con
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--485
+\OT1/cmr/m/it/12 and ger-ma-nium\OT1/cmr/m/n/12 , Amer-i-can Jour-nal
+ []
+
+
+Underfull \hbox (badness 6725) in paragraph at lines 481--485
+\OT1/cmr/m/n/12 of Physics, \OT1/cmr/bx/n/12 48\OT1/cmr/m/n/12 (3), 197--199 (1980).
+ []
+
+
+Overfull \hbox (119.86304pt too wide) in paragraph at lines 481--485
+\OT1/cmr/m/n/12 https://doi.org/10.1119/1.12172https://doi.org/10.1119/1.12172 
+ []
+
+./LabReport.tex:490: Undefined control sequence.
+l.490 \href
+           {https://doi.org/10.1007/978-3-319-23880-7}{https
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--491
+[]\OT1/cmr/m/n/12 M. Grund-mann, \OT1/cmr/m/it/12 The Physics of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--491
+\OT1/cmr/m/it/12 Semi-con-duc-tors: An In-tro-duc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--491
+\OT1/cmr/m/it/12 In-clud-ing Nanophysics and Ap-pli-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 487--491
+\OT1/cmr/m/n/12 https://doi.org/10.1007/978-3-319-
+ []
+
+./LabReport.tex:496: Undefined control sequence.
+l.496 Available: \url
+                     {https://doi.org/10.26636/jtit.2010.1.1015}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--497
+\OT1/cmr/m/it/12 mu-ni-ca-tions and In-for-ma-tion Tech-
+ []
+
+
+Underfull \hbox (badness 2980) in paragraph at lines 499--502
+[]\OT1/cmr/m/n/12 G. W. Neudeck, \OT1/cmr/m/it/12 The Bipo-lar Junc-
+ []
+
+./LabReport.tex:508: Missing } inserted.
+<inserted text> 
+                }
+l.508 \end{thebibliography}
+                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+./LabReport.tex:514: LaTeX Error: \begin{figure} on input line 223 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.514 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./LabReport.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+./LabReport.tex:514: You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z@ \@@end 
+                                                  
+l.514 \end{document}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+./LabReport.tex:514: LaTeX Error: \begin{figure} on input line 223 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.514 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./LabReport.tex:514: Missing } inserted.
+<inserted text> 
+                }
+l.514 \end{document}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+! Emergency stop.
+<*> LabReport.tex
+                 
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 3558 strings out of 476076
+ 59789 string characters out of 5793775
+ 1955187 words of memory out of 5000000
+ 25667 multiletter control sequences out of 15000+600000
+ 565726 words of font info for 63 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 56i,12n,65p,808b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

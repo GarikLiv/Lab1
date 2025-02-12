@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 22:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 23:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -292,27 +292,16 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 325--326
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7 <./linSiSatCurrent.png>]
-./LabReport.tex:408: Undefined control sequence.
-l.408 ...an experimental value of $k = 1.389 \tims
-                                                   10^{-23} \pm 2.19 \times ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \vbox (badness 3590) has occurred while \output is active []
 
 
 Underfull \hbox (badness 1048) in paragraph at lines 413--413
 []\OT1/cmr/bx/n/17.28 Summary and conl-cu-
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 ./LabReport.tex:430: Undefined control sequence.
 l.430 \href
-           {https://doi.org/10.1119/1.12172}{https://doi.org/10.1119/1.12172}
+           {https://doi.org/10.1119/1.12172}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -337,11 +326,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 427--431
 
 Underfull \hbox (badness 6725) in paragraph at lines 427--431
 \OT1/cmr/m/n/12 of Physics, \OT1/cmr/bx/n/12 48\OT1/cmr/m/n/12 (3), 197--199 (1980).
- []
-
-
-Overfull \hbox (119.86304pt too wide) in paragraph at lines 427--431
-\OT1/cmr/m/n/12 https://doi.org/10.1119/1.12172https://doi.org/10.1119/1.12172 
  []
 
 ./LabReport.tex:436: Undefined control sequence.
@@ -392,6 +376,7 @@ Underfull \hbox (badness 2980) in paragraph at lines 445--448
 []\OT1/cmr/m/n/12 G. W. Neudeck, \OT1/cmr/m/it/12 The Bipo-lar Junc-
  []
 
+[8 <./linGeSatCurrent.png>]
 ./LabReport.tex:454: Missing } inserted.
 <inserted text> 
                 }
@@ -403,7 +388,9 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[8 <./linGeSatCurrent.png>] (./LabReport.aux)
+[9
+
+] (./LabReport.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -425,10 +412,10 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  56i,9n,65p,825b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on LabReport.pdf (8 pages, 274255 bytes).
+Output written on LabReport.pdf (9 pages, 274781 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
