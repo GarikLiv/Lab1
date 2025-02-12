@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739338560.08149 "LabReport.tex" "LabReport.pdf" "LabReport" 1739338560.36332 2
+["pdflatex"] 1739338830.04045 "LabReport.tex" "LabReport.pdf" "LabReport" 1739338830.31994 2
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1736268207 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1736268207 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1736268207 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -59,8 +59,8 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1737920508 7112991 805ca99f3eeba82f373c6a9dd71f2825 ""
   "2_6SiBoltz.png" 1739336038.51764 37260 4647a93ffad228a247a7441a2590d536 ""
   "GeBoltz.png" 1739337244.03909 21163 d3f39687c68c3f2cf8b5d25a251fc161 ""
-  "LabReport.aux" 1739338560.3374 4209 bd6137aff364c8553795f155e0953f26 "pdflatex"
-  "LabReport.tex" 1739338559.35943 23193 7aaf970564a06303dd22106f08d3eb38 ""
+  "LabReport.aux" 1739338830.29146 4209 bd6137aff364c8553795f155e0953f26 "pdflatex"
+  "LabReport.tex" 1739338816.35838 23408 8f45d4a0ba57dce93ba1c0d787d2517b ""
   "experimental_setup.png" 0 -1 0 ""
   "linGeSatCurrent.png" 1739337243.11312 26805 8734adcfe0a3a31eb35235ad2fda95c2 ""
   "linSiSatCurrent.png" 1739336037.82266 26812 182c6c02dd9b9587e8bdb2bdb195e779 ""

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 23:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 23:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -277,9 +277,6 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 359--360
 [][] 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 <linGeSatCurrent.png, id=41, 428.5611pt x 315.8199pt>
 File: linGeSatCurrent.png Graphic file (type png)
 <use linGeSatCurrent.png>
@@ -291,16 +288,17 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 363--364
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[7]
-Underfull \vbox (badness 3590) has occurred while \output is active []
-
- [8 <./linSiSatCurrent.png> <./linGeSatCurrent.png>]
+ [7]
 Underfull \hbox (badness 1048) in paragraph at lines 375--375
 []\OT1/cmr/bx/n/17.28 Summary and conl-cu-
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./linSiSatCurrent.png> <./linGeSatCurrent.png>]
 ./LabReport.tex:388: Undefined control sequence.
 l.388 \href
            {https://doi.org/10.1119/1.12172}
@@ -405,13 +403,13 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3543 strings out of 476076
  59478 string characters out of 5793775
- 1952187 words of memory out of 5000000
+ 1951187 words of memory out of 5000000
  25652 multiletter control sequences out of 15000+600000
  565726 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,9n,65p,852b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,9n,65p,883b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on LabReport.pdf (9 pages, 276509 bytes).
+Output written on LabReport.pdf (9 pages, 276759 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
