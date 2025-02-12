@@ -199,6 +199,42 @@ We took the dataset of $I_c \text{ vs }V_{be}$ and fitted it to Ebbers moll equa
 By fitting our dataset to this equation we determined an experimental value for $V_T$ using the curve fit function from scipy.
 We then performed a least square analysis on our $V_T \text{ vs } T$ dataset where we expect the slope to equal $\frac{k}{e}$. We performed this analysis on the dataset from both the silicon and germanium transistor. 
 
+\begin {table}[h]
+{
+{%\footnotesize
+\begin {center}
+\begin {tabular} {c | c | c }
+\hline
+Temps (K) 			&    $V_T$		& Err($V_T$)\\
+\hline  &\\
+296.4   & 0.0247 &  0.000137\\
+\hline  & \\
+297.4   & 0.02554 &  3.54e-05\\
+\hline  & \\
+298.8   & 0.02568 &  2.763e-05\\
+\hline  & \\
+300.1   & 0.02579 &  3.376e-05\\
+\hline  & \\
+302.0   & 0.02599 &  3.060e-05\\
+\hline  & \\
+306.1   & 0.02644 &  2.216e-05\\
+\hline  & \\
+307.5   & 0.02659 &  2.194e-05\\
+\hline  & \\
+313.3   & 0.02718 &  1.825e-05\\
+\hline  & \\
+316.1	& 0.02746 &  1.864e-05\\
+\hline% \hline
+\end {tabular}
+\end {center}
+}
+}
+\caption {\label{tab:events}
+Predicted and observed numbers of events classified in the Far Detector as fully and
+partially reconstructed charged current interactions shown for all running periods.
+ }
+\end {table}
+
 \begin{figure}[h]
 	\includegraphics[width = .5\textwidth]{2_6SiBoltz.png}
 	\caption{Silicon temperature vs thermal voltage graph. The data points collected are represented by the black dots, our best-fit slope is the solid black curve, and the expected slope of $\frac{k}{e}$ is the solid blue curve.\label{g1}}

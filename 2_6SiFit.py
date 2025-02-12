@@ -211,6 +211,10 @@ plt.plot(intervalT,intervalT*k/e,color="blue",linewidth=1.2,label="Expected Ther
 plt.legend()
 plt.savefig("2_6SiBoltz.png",bbox_inches="tight")
 plt.close()
+for i in range (9):
+    print(Temps[i])
+for i in range (9):
+    print(str(fitData[i][0][0])[:8] + ' '+ str(np.sqrt(np.diag(fitData[i][1]))[0]))
 """
 [Outlier Code]
 truncTemps = Temps[1:9]
