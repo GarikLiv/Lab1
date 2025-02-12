@@ -160,13 +160,22 @@ In this experiment, we measure \( I_C \) as a function of \( V_{BE} \) at differ
 
 \subsection{Apparatus}
 
-Ideas behind the particular technique should be briefly
-discussed. Enclose references. Sketches, pictures, and
-suitable schematics should be included and explained
-concisely. All major components of the system should be
-mentioned and their role clearly motivated. This section
-is not simply a list of components and it is not an
-instruction manual. 
+This experiment investigates the temperature and voltage dependence of an NPN Bipolar Junction Transistor (BJT) by analyzing the relationship between the base-emitter voltage (\( V_{BE} \)) and the resulting collector current (\( I_C \)). The goal is to study the exponential behavior of \( I_C \) as described by the Ebers-Moll equation and to extract key physical constants such as Boltzmann’s constant and the semiconductor band gap \cite{Neudeck}.
+
+The transistor is mounted on an aluminum plate to enable controlled temperature variation. Heating is provided using a GwINSTEK GPS-3030DD Laboratory DC Power Supply connected to a 25 W power resistor clamped to the plate. A Type K thermocouple, integrated with the Omega HH12C Temperature Probe, measures the transistor’s temperature with high precision, as precise thermal management is essential for accurate semiconductor characterization \cite{Grundmann}. For cryogenic measurements, the transistor is submerged in liquid nitrogen to investigate low-temperature behavior.
+
+A programmable voltage source, controlled via LabView’s \texttt{semiconductor.vi} and interfaced through a Texas Instruments NI USB-6341 X Series Multifunction DAQ, applies precise voltages to the base-emitter junction. The DAQ ensures synchronized voltage control and current measurements, enabling automated data collection. The collector current (\( I_C \)) is measured using a Keithley 6485 Picoammeter, which offers high sensitivity across several orders of magnitude, from nanoamps to milliamps. A 1 k\(\Omega\) resistor is placed in series with the collector to limit current and protect the transistor.
+
+Connections between the transistor, power supply, and measurement instruments are established using BNC banana plugs, BNC female adapters, and coaxial cables to minimize electrical noise. Simple wires and a short wire are used to complete the circuit and ensure stable connections throughout the setup.
+
+The experimental procedure is also repeated with a germanium transistor to compare its temperature-dependent behavior with that of silicon, enabling validation of extracted values for Boltzmann’s constant and the band gap \cite{Collings}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{experimental_setup.png}
+\caption{Schematic of the experimental setup, including the NPN BJT transistor, Keithley Picoammeter, DC power supply, and temperature control system.}
+\label{fig:apparatus}
+\end{figure}
 
 
 %=====================================================
