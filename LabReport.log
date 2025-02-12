@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 23:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -180,9 +180,6 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -296,15 +293,16 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 363--364
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] [8
+[7]
+Underfull \vbox (badness 3590) has occurred while \output is active []
 
- <./linSiSatCurrent.png> <./linGeSatCurrent.png>]
-Underfull \hbox (badness 1048) in paragraph at lines 451--451
+ [8 <./linSiSatCurrent.png> <./linGeSatCurrent.png>]
+Underfull \hbox (badness 1048) in paragraph at lines 375--375
 []\OT1/cmr/bx/n/17.28 Summary and conl-cu-
  []
 
-./LabReport.tex:468: Undefined control sequence.
-l.468 \href
+./LabReport.tex:388: Undefined control sequence.
+l.388 \href
            {https://doi.org/10.1119/1.12172}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -313,27 +311,27 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--469
+Underfull \hbox (badness 10000) in paragraph at lines 385--389
 []\OT1/cmr/m/n/12 P. J. Collings, \OT1/cmr/m/it/12 Sim-ple mea-sure-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--469
+Underfull \hbox (badness 10000) in paragraph at lines 385--389
 \OT1/cmr/m/it/12 ment of the band gap in sil-i-con
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--469
+Underfull \hbox (badness 10000) in paragraph at lines 385--389
 \OT1/cmr/m/it/12 and ger-ma-nium\OT1/cmr/m/n/12 , Amer-i-can Jour-nal
  []
 
 
-Underfull \hbox (badness 6725) in paragraph at lines 465--469
+Underfull \hbox (badness 6725) in paragraph at lines 385--389
 \OT1/cmr/m/n/12 of Physics, \OT1/cmr/bx/n/12 48\OT1/cmr/m/n/12 (3), 197--199 (1980).
  []
 
-./LabReport.tex:474: Undefined control sequence.
-l.474 \href
+./LabReport.tex:394: Undefined control sequence.
+l.394 \href
            {https://doi.org/10.1007/978-3-319-23880-7}{https
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -342,27 +340,27 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--475
+Underfull \hbox (badness 10000) in paragraph at lines 391--395
 []\OT1/cmr/m/n/12 M. Grund-mann, \OT1/cmr/m/it/12 The Physics of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--475
+Underfull \hbox (badness 10000) in paragraph at lines 391--395
 \OT1/cmr/m/it/12 Semi-con-duc-tors: An In-tro-duc-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--475
+Underfull \hbox (badness 10000) in paragraph at lines 391--395
 \OT1/cmr/m/it/12 In-clud-ing Nanophysics and Ap-pli-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--475
+Underfull \hbox (badness 10000) in paragraph at lines 391--395
 \OT1/cmr/m/n/12 https://doi.org/10.1007/978-3-319-
  []
 
-./LabReport.tex:480: Undefined control sequence.
-l.480 Available: \url
+./LabReport.tex:400: Undefined control sequence.
+l.400 Available: \url
                      {https://doi.org/10.26636/jtit.2010.1.1015}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -371,19 +369,19 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--481
+Underfull \hbox (badness 10000) in paragraph at lines 397--401
 \OT1/cmr/m/it/12 mu-ni-ca-tions and In-for-ma-tion Tech-
  []
 
 
-Underfull \hbox (badness 2980) in paragraph at lines 483--486
+Underfull \hbox (badness 2980) in paragraph at lines 403--406
 []\OT1/cmr/m/n/12 G. W. Neudeck, \OT1/cmr/m/it/12 The Bipo-lar Junc-
  []
 
-./LabReport.tex:492: Missing } inserted.
+./LabReport.tex:412: Missing } inserted.
 <inserted text> 
                 }
-l.492 \end{thebibliography}
+l.412 \end{thebibliography}
                            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -391,9 +389,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[9
-
-] (./LabReport.aux)
+[9] (./LabReport.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -409,13 +405,13 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3543 strings out of 476076
  59478 string characters out of 5793775
- 1951187 words of memory out of 5000000
+ 1952187 words of memory out of 5000000
  25652 multiletter control sequences out of 15000+600000
  565726 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,9n,65p,825b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,9n,65p,852b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on LabReport.pdf (9 pages, 275716 bytes).
+Output written on LabReport.pdf (9 pages, 276509 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
