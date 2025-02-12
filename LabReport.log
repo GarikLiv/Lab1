@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.26)  11 FEB 2025 22:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -184,17 +184,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 []\OT1/cmr/m/n/12 The sat-u-ra-tion cur-rent $\OML/cmm/m/it/12 I[]$ \OT1/cmr/m/n/12 it-self is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 \OT1/cmr/m/n/12 temperature-dependent and fol-lows the
  []
 
-./LabReport.tex:142: Undefined control sequence.
-l.142 \begin{equation}\labe
+./LabReport.tex:132: Undefined control sequence.
+l.132 \begin{equation}\labe
                            {eq5}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -203,71 +203,115 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [3]
-Underfull \hbox (badness 1038) in paragraph at lines 172--179
-\OT1/cmr/m/n/12 be briefly dis-cussed. En-close ref-er-ences.
+
+LaTeX Warning: Citation `Grundmann' on page 4 undefined on input line 164.
+
+
+LaTeX Warning: Citation `Collings' on page 4 undefined on input line 170.
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 170--171
+\OT1/cmr/m/n/12 peated with a ger-ma-nium tran-sis-tor to
  []
 
 
-Underfull \vbox (badness 3049) has occurred while \output is active []
+LaTeX Warning: File `experimental_setup.png' not found on input line 174.
+
+
+./LabReport.tex:174: Package pdftex.def Error: File `experimental_setup.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 ...th=0.5\textwidth]{experimental_setup.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 174--175
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-<2_6SiBoltz.png, id=28, 442.2924pt x 315.8199pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+<2_6SiBoltz.png, id=32, 442.2924pt x 315.8199pt>
 File: 2_6SiBoltz.png Graphic file (type png)
 <use 2_6SiBoltz.png>
-Package pdftex.def Info: 2_6SiBoltz.png  used on input line 278.
+Package pdftex.def Info: 2_6SiBoltz.png  used on input line 276.
 (pdftex.def)             Requested size: 234.5pt x 167.4464pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 278--279
+Overfull \hbox (5.0pt too wide) in paragraph at lines 276--277
 [][] 
  []
 
-<GeBoltz.png, id=30, 430.0065pt x 315.8199pt>
+<GeBoltz.png, id=34, 430.0065pt x 315.8199pt>
 File: GeBoltz.png Graphic file (type png)
 <use GeBoltz.png>
-Package pdftex.def Info: GeBoltz.png  used on input line 282.
+Package pdftex.def Info: GeBoltz.png  used on input line 280.
 (pdftex.def)             Requested size: 234.5pt x 172.22685pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 282--283
+Overfull \hbox (5.0pt too wide) in paragraph at lines 280--281
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <./2_6SiBoltz.png> <./GeBoltz.png>]
-<linSiSatCurrent.png, id=36, 424.9476pt x 315.8199pt>
+ [6 <./2_6SiBoltz.png> <./GeBoltz.png>]
+<linSiSatCurrent.png, id=40, 424.9476pt x 315.8199pt>
 File: linSiSatCurrent.png Graphic file (type png)
 <use linSiSatCurrent.png>
-Package pdftex.def Info: linSiSatCurrent.png  used on input line 323.
+Package pdftex.def Info: linSiSatCurrent.png  used on input line 321.
 (pdftex.def)             Requested size: 234.5pt x 174.27975pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 323--324
+Overfull \hbox (5.0pt too wide) in paragraph at lines 321--322
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<linGeSatCurrent.png, id=37, 428.5611pt x 315.8199pt>
+<linGeSatCurrent.png, id=41, 428.5611pt x 315.8199pt>
 File: linGeSatCurrent.png Graphic file (type png)
 <use linGeSatCurrent.png>
-Package pdftex.def Info: linGeSatCurrent.png  used on input line 327.
+Package pdftex.def Info: linGeSatCurrent.png  used on input line 325.
 (pdftex.def)             Requested size: 234.5pt x 172.81477pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 327--328
+Overfull \hbox (5.0pt too wide) in paragraph at lines 325--326
 [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./linSiSatCurrent.png>]
-Underfull \hbox (badness 1048) in paragraph at lines 422--422
+[7 <./linSiSatCurrent.png>]
+./LabReport.tex:408: Undefined control sequence.
+l.408 ...an experimental value of $k = 1.389 \tims
+                                                   10^{-23} \pm 2.19 \times ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 413--413
 []\OT1/cmr/bx/n/17.28 Summary and conl-cu-
  []
 
-./LabReport.tex:439: Undefined control sequence.
-l.439 \href
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+./LabReport.tex:430: Undefined control sequence.
+l.430 \href
            {https://doi.org/10.1119/1.12172}{https://doi.org/10.1119/1.12172}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -276,36 +320,61 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--440
+Underfull \hbox (badness 10000) in paragraph at lines 427--431
 []\OT1/cmr/m/n/12 P. J. Collings, \OT1/cmr/m/it/12 Sim-ple mea-sure-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--440
+Underfull \hbox (badness 10000) in paragraph at lines 427--431
 \OT1/cmr/m/it/12 ment of the band gap in sil-i-con
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--440
+Underfull \hbox (badness 10000) in paragraph at lines 427--431
 \OT1/cmr/m/it/12 and ger-ma-nium\OT1/cmr/m/n/12 , Amer-i-can Jour-nal
  []
 
 
-Underfull \hbox (badness 6725) in paragraph at lines 436--440
+Underfull \hbox (badness 6725) in paragraph at lines 427--431
 \OT1/cmr/m/n/12 of Physics, \OT1/cmr/bx/n/12 48\OT1/cmr/m/n/12 (3), 197--199 (1980).
  []
 
 
-Overfull \hbox (119.86304pt too wide) in paragraph at lines 436--440
+Overfull \hbox (119.86304pt too wide) in paragraph at lines 427--431
 \OT1/cmr/m/n/12 https://doi.org/10.1119/1.12172https://doi.org/10.1119/1.12172 
  []
 
+./LabReport.tex:436: Undefined control sequence.
+l.436 \href
+           {https://doi.org/10.1007/978-3-319-23880-7}{https
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Underfull \vbox (badness 3884) has occurred while \output is active []
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+[]\OT1/cmr/m/n/12 M. Grund-mann, \OT1/cmr/m/it/12 The Physics of
+ []
 
 
-./LabReport.tex:445: Undefined control sequence.
-l.445 Available: \url
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\OT1/cmr/m/it/12 Semi-con-duc-tors: An In-tro-duc-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\OT1/cmr/m/it/12 In-clud-ing Nanophysics and Ap-pli-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--437
+\OT1/cmr/m/n/12 https://doi.org/10.1007/978-3-319-
+ []
+
+./LabReport.tex:442: Undefined control sequence.
+l.442 Available: \url
                      {https://doi.org/10.26636/jtit.2010.1.1015}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -314,38 +383,52 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--446
+Underfull \hbox (badness 10000) in paragraph at lines 439--443
 \OT1/cmr/m/it/12 mu-ni-ca-tions and In-for-ma-tion Tech-
  []
 
 
-Underfull \hbox (badness 2980) in paragraph at lines 448--451
+Underfull \hbox (badness 2980) in paragraph at lines 445--448
 []\OT1/cmr/m/n/12 G. W. Neudeck, \OT1/cmr/m/it/12 The Bipo-lar Junc-
  []
 
-[7 <./linGeSatCurrent.png>] (./LabReport.aux)
+./LabReport.tex:454: Missing } inserted.
+<inserted text> 
+                }
+l.454 \end{thebibliography}
+                           
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[8 <./linGeSatCurrent.png>] (./LabReport.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3508 strings out of 476076
- 58454 string characters out of 5793775
- 1948187 words of memory out of 5000000
- 25618 multiletter control sequences out of 15000+600000
- 565557 words of font info for 62 fonts, out of 8000000 for 9000
+ 3543 strings out of 476076
+ 59478 string characters out of 5793775
+ 1945187 words of memory out of 5000000
+ 25652 multiletter control sequences out of 15000+600000
+ 565726 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,9n,65p,808b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on LabReport.pdf (7 pages, 262546 bytes).
+ 56i,9n,65p,825b,386s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on LabReport.pdf (8 pages, 274255 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

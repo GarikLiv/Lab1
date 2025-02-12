@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739329914.19753 "LabReport.tex" "LabReport.pdf" "LabReport" 1739329914.47389 2
+["pdflatex"] 1739333984.25807 "LabReport.tex" "LabReport.pdf" "LabReport" 1739333984.56284 2
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1736268207 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1736268207 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1736268207 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -17,6 +17,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1736268207 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1736268207 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1736268207 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1736268207 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1736268207 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1736268207 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1736268207 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -31,6 +32,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1736268207 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1736268207 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1736268207 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1736268207 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1736268207 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty" 1736268207 2222 499d61426192c39efd8f410ee1a52b9c ""
   "/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty" 1736268207 4173 82ac04dfb1256038fad068287fbb4fe6 ""
@@ -55,12 +57,13 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1736268207 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1737920536.66064 325518 3dff2bac5bde75cd7e600320ce8a00d6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1737920508 7112991 805ca99f3eeba82f373c6a9dd71f2825 ""
-  "2_6SiBoltz.png" 1739329822.08924 37260 4647a93ffad228a247a7441a2590d536 ""
-  "GeBoltz.png" 1739328373.99332 21165 4ed2338f162301a27e7b0e85b5b3aba3 ""
-  "LabReport.aux" 1739329914.44829 3679 6f5c36d12367a0c7c43747f06682a4cb "pdflatex"
-  "LabReport.tex" 1739329912.95733 21734 f73a2eb5e1d6a24124e3079f4b830bf2 ""
-  "linGeSatCurrent.png" 1739328373.08235 26805 8734adcfe0a3a31eb35235ad2fda95c2 ""
-  "linSiSatCurrent.png" 1739329821.37826 26812 182c6c02dd9b9587e8bdb2bdb195e779 ""
+  "2_6SiBoltz.png" 1739332058.01376 37260 4647a93ffad228a247a7441a2590d536 ""
+  "GeBoltz.png" 1739333984.34299 21163 d3f39687c68c3f2cf8b5d25a251fc161 ""
+  "LabReport.aux" 1739333984.52698 4025 0f5e05c81638404df05bbf33b48923eb "pdflatex"
+  "LabReport.tex" 1739333963.61613 23853 5fdbefb294a7e7769e44bff8972a6a48 ""
+  "experimental_setup.png" 0 -1 0 ""
+  "linGeSatCurrent.png" 1739333983.39902 26805 8734adcfe0a3a31eb35235ad2fda95c2 ""
+  "linSiSatCurrent.png" 1739332057.34578 26812 182c6c02dd9b9587e8bdb2bdb195e779 ""
   (generated)
   "LabReport.aux"
   "LabReport.log"

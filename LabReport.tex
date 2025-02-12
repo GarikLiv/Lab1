@@ -76,14 +76,13 @@
 
 Semiconductors are essential components of modern electronics due to their unique electronic properties: a valence band filled with electrons and a nearly empty conduction band, separated by an energy band gap \( V_g \). The ability of electrons to transition from the valence band to the conduction band under specific conditions, such as thermal excitation or applied voltage, forms the basis for the functionality of semiconductor devices like transistors \cite{Thornton}.
 
-<<<<<<< HEAD
+%<<<<<<< HEAD
 In this experiment, we explore the behavior of an NPN bipolar junction transistor (BJT) and focus on the relationship between the collector current \( I_C \) and the base emitter voltage \( V_{BE} \). The function of the transistor depends on the exponential dependence of \( I_C \) on \( V_{BE} \), described by the Ebers-Moll equation.
 
-\[
-=======
+%=======
 In this experiment, we investigate the behavior of an NPN bipolar junction transistor (BJT) by examining the relationship between the collector current \( I_C \) and the base-emitter voltage \( V_{BE} \). The transistor’s function depends on the exponential dependence of \( I_C \) on \( V_{BE} \), described by the Ebers-Moll equation:
 \begin{equation}\label{eq1}
->>>>>>> a9e140ca79745e5e2c7135285a616d71aedfce01
+%>>>>>>> a9e140ca79745e5e2c7135285a616d71aedfce01
 I_C = I_S \left(e^{eV_{BE}/kT} - 1\right)
 \end{equation}
 
@@ -170,9 +169,9 @@ Connections between the transistor, power supply, and measurement instruments ar
 
 The experimental procedure is also repeated with a germanium transistor to compare its temperature-dependent behavior with that of silicon, enabling validation of extracted values for Boltzmann’s constant and the band gap \cite{Collings}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{experimental_setup.png}
+\includegraphics[width=0.5\textwidth]{experimental_setup.png}
 \caption{Schematic of the experimental setup, including the NPN BJT transistor, Keithley Picoammeter, DC power supply, and temperature control system.}
 \label{fig:apparatus}
 \end{figure}
@@ -199,8 +198,7 @@ We then supplied voltage to the thermocouple and watied for the temperature of t
 
 \subsection{Data Analysis}
 \subsubsection{$V_T \text{ vs } T$}
-We took the dataset of $I_c \text{ vs }V_{be}$ and fitted it to \ref{eq4}.
-By fitting our dataset to this equation we determined an experimental value for $V_T$ using the curve fit function from scipy.
+We took the dataset of $I_c \text{ vs }V_{be}$ and fitted it to \ref{eq4}. We determined an experimental value and standard error for $V_T$ using the curve fit function from scipy.
 
 \begin {table}[H]
 \caption*{Silicon Data}
@@ -272,7 +270,7 @@ Temps (K) 			&    $V_T$		& Err($V_T$)\\
 \caption{\label{tab2} $V_T \text{ vs } T$ data for germanium transistor}
 \end {table}
 
-We then performed a weighted least square analysis on \ref{eq7} with the variance of $V_T$ found from curve fit.We expected the slope to equal $\frac{k}{e}$. We performed this analysis for both the silicon and germanium transistor data. 
+We then performed a weighted least square analysis with \ref{eq7} as the model, and with the variance of $V_T$ found from curve fit. We expected the slope to equal $\frac{k}{e}$. We performed this analysis for both the silicon and germanium transistor data. 
 
 \begin{figure}[H]
 	\includegraphics[width = .5\textwidth]{2_6SiBoltz.png}
@@ -284,33 +282,32 @@ We then performed a weighted least square analysis on \ref{eq7} with the varianc
 \end{figure}
 
 \subsubsection{$I_s \text{ vs }T$}
-From our $I_c \text{ vs } V_{be}$ dataset, we also determined an experimental value for $I_s$ using the curve fit funciton from scipy.
-As our range of temperatures [296K,316K] was small, we performed a least squares analysis on \ref{eq6}
+We took the dataset of $I_c \text{ vs }V_{be}$ and fitted it to \ref{eq4}. We determined an experimental value and standard error for $I_s$ using the curve fit function from scipy.
 
 \begin {table}[H]
 \caption*{Silicon Data}
 {\footnotesize
 \begin {center}
-\begin {tabular} {c | c | c }
+\begin {tabular} {|c | c | c| }
 \hline
 Temps (K) 			&    $I_s$(Pico Amps) & Err($I_s$)\\
-\hline  &\\
+\hline  &&\\
 296.4   & 0.24 & 0.0243\\
-\hline  & \\
+\hline  && \\
 297.4   & 0.46 & 0.0121\\
-\hline  & \\
+\hline  & &\\
 298.8   &0.59  & 0.0120\\
-\hline  & \\
+\hline  && \\
 300.1   &0.73  &  0.0179\\
-\hline  & \\
+\hline  & &\\
 302.0   &1.00  & 0.0220\\
-\hline  & \\
+\hline  & &\\
 306.1   &2.09  &  0.0320\\
-\hline  & \\
+\hline  & &\\
 307.5   &2.65  &  0.0397\\
-\hline  & \\
+\hline  & &\\
 313.3   &6.84  &  0.0816\\
-\hline  & \\
+\hline  & &\\
 316.1	&10.2  & 0.122\\
 \hline% \hline
 \end {tabular}
@@ -318,6 +315,7 @@ Temps (K) 			&    $I_s$(Pico Amps) & Err($I_s$)\\
 \caption{\label{tab1} $I_s \text{ vs } T$ data for silicon transistor}
 }
 \end{table}
+As our range of temperatures [296K,316K] was small, we performed a weighted least squares analysis with \ref{eq6} as the model, and the variance for $I_s$ derived from curve fit.
 
 \begin{figure}[h]
 	\includegraphics[width = .5\textwidth]{linSiSatCurrent.png}
@@ -327,7 +325,6 @@ Temps (K) 			&    $I_s$(Pico Amps) & Err($I_s$)\\
 	\includegraphics[width = .5\textwidth]{linGeSatCurrent.png}
 	\caption{Germanium saturation current vs temperature. The data points collected are represented by the black dots, and our best-fit slope is the solid black curve.\label{g4}}
 \end{figure}
-We calculated the 
 
 %This is the most important section of the report.
 %Describe data analysis. Details! Perhaps include a figure and refer
@@ -407,14 +404,8 @@ We calculated the
 %=====================================================
 
 \section{Results}
-
-Clearly present the result of your analysis. Make sure
-you include the uncertainties. No experimental result
-can be quoted without an error attached to it.
-
-Your results should be compared with predictions and other
-measurements.
-
+The slope of the best fit curve from figure 2 was found to be $8.67 \times 10^{-5} \pm 1.37 \times 10^{-7} \frac{J}{KC}$, and the slope of the best fit curve from figure 3 was found to be $3.506 \times 10^{-4} \pm 5.61\times 10^{-7}\frac{J}{KC}$. We expected to find a slope of $\frac{k}{e} = 8.617 \times 10^{-5}\frac{J}{KC}$. The slope of the best curve from figure 4 was found to be $-1.66 \times 10^{4} \pm 716.863 \frac{K}{C}$, and the slope of the best curve from figure 5 was $-2820 \pm 76.537 \frac{K}{C}$. We expected to find a slope of $\frac{-E_g}{k} = \frac{-1.1}{k} = -1.2769565 \times 10^{4} \frac{K}{C}$ for figure 3 and a slope of $\frac{-E_g}{k} = \frac{-0.7}{k} = -8126.087 \frac{K}{C}$ for figure 5.
+In more familiar terms, from figure 2 we found an experimental value of $k = 1.389 \tims 10^{-23} \pm 2.19 \times 10^{-26} \frac{J}{K}$
 
 %=====================================================
 %============ Section ================================

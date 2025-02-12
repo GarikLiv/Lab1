@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 from scipy.stats import linregress
+import statsmodels.api as sm
 
 def transCurrent(vBe,vT,iSat):
     return iSat*(np.exp(vBe/vT)-1)
@@ -161,12 +162,21 @@ Trecip = [(1/Is[i][0]) for i in range (size)]
 paramsSat = linregress(Trecip,lnIs)
 print(paramsSat)
 print(-k*paramsSat[0]/e)
+ErrIs = np.array([np.log(np.sqrt(np.diag(fitData[i][1]))[1]) for i in range(size)])
+VarIs = np.array([ErrIs[x]**2 for x in range(size)])
+weightIs = np.array([1/VarIs[x] for x in range(size)])
+TrecipInt = sm.add_constant(Trecip)
+model = sm.WLS(lnIs, TrecipInt, weights = weightIs)
+results = model.fit()
+print(results.summary())
+print(results.params[0])
+
 intervalT = np.linspace(290,320,1000)
 plt.figure()
 plt.xlabel('1/T (Kelvin)^-1',fontsize = 14)
 plt.ylabel('ln(I_S) (ln(Amps))',fontsize=14)
 plt.scatter(Trecip,lnIs,color="black",label="data",s=5)
-plt.plot((1/intervalT),(1/intervalT)*paramsSat[0] + paramsSat[1],color="black",linewidth=1.2,label ="Best-Fit Curve")
+plt.plot((1/intervalT),(1/intervalT)*results.params[1] + results.params[0],color="black",linewidth=1.2,label ="Best-Fit Curve")
 plt.legend()
 plt.savefig("linGeSatCurrent.png",bbox_inches='tight')
 plt.close()
@@ -204,6 +214,13 @@ def thermVolt(T,k):
 
 Temps = np.array([Vdata[i][1] + 273 for i in range(size)])
 VoltsT = np.array([fitData[i][0][0] for i in range(size)])
+VarVT = np.array([np.diag(fitData[i][1])[0] for i in range(size)])
+weightVT = np.array([1/VarVT[x] for x in range(size)])
+model = sm.WLS(VoltsT, Temps, weights = weightVT)
+results = model.fit()
+print(results.summary())
+print(results.params[0])
+
 Temps = Temps[:,np.newaxis]
 a, _, _, _ = np.linalg.lstsq(Temps, VoltsT)
 print(a)
@@ -229,7 +246,7 @@ plt.xlim(290,320)
 plt.xlabel('T (Kelvin)',fontsize=14)
 plt.ylabel('V_T (Volts)',fontsize=14)
 plt.scatter(Temps,VoltsT,color="black",label="data",s=5)
-plt.plot(intervalT,intervalT*a,color="black",linewidth=1.2,label="Best-Fit Curve")
+plt.plot(intervalT,intervalT*results.params[0],color="black",linewidth=1.2,label="Best-Fit Curve")
 plt.plot(intervalT,intervalT*k/e,color="blue",linewidth=1.2,label="Expected Thermal Voltage Curve")
 plt.legend()
 plt.savefig("GeBoltz.png",bbox_inches="tight")
